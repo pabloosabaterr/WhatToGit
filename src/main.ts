@@ -7,13 +7,13 @@ import { Scanner } from "./scanner.ts";
 const OUTPUT = "WhatToGit.md";
 
 try {
-  const git = new Git(Cli.parseArgs());
-  const markers = await new Scanner(git, new Grep(git)).scan();
-  const markdown = new Report(markers, await git.info()).toMarkdown();
+    const git = new Git(Cli.parseArgs());
+    const markers = await new Scanner(git, new Grep(git)).scan();
+    const markdown = new Report(markers, await git.info()).toMarkdown();
 
-  await Deno.writeTextFile(OUTPUT, markdown);
-  console.log(`${markers.length} markers -> ${OUTPUT}`);
+    await Deno.writeTextFile(OUTPUT, markdown);
+    console.log(`${markers.length} markers -> ${OUTPUT}`);
 } catch (error) {
-  console.error(error instanceof Error ? error.message : String(error));
-  Deno.exit(1);
+    console.error(error instanceof Error ? error.message : String(error));
+    Deno.exit(1);
 }

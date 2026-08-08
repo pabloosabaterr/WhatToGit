@@ -1,55 +1,55 @@
 name: Report
 
 on:
-  schedule:
-    - cron: "0 4 * * 1"
-  workflow_dispatch:
-  push:
-    paths:
-      - "src/**"
-      - "deno.json"
+    schedule:
+        - cron: "0 4 * * 1"
+    workflow_dispatch:
+    push:
+        paths:
+            - "src/**"
+            - "deno.json"
 
 permissions:
-  contents: write
+    contents: write
 
 concurrency:
-  group: report
-  cancel-in-progress: true
+    group: report
+    cancel-in-progress: true
 
 jobs:
-  report:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    report:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
 
-      - uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
+            - uses: denoland/setup-deno@v2
+              with:
+                  deno-version: v2.x
 
-      - name: Cache git.git
-        id: cache
-        uses: actions/cache@v4
-        with:
-          path: git-src
-          key: gitgit-${{ github.run_id }}
-          restore-keys: gitgit-
+            - name: Cache git.git
+              id: cache
+              uses: actions/cache@v4
+              with:
+                  path: git-src
+                  key: gitgit-${{ github.run_id }}
+                  restore-keys: gitgit-
 
-      - name: Fetch git.git
-        run: |
-          if [ -d git-src/.git ]; then
-            git -C git-src fetch --quiet origin master
-            git -C git-src checkout --quiet FETCH_HEAD
-          else
-            git clone --quiet https://github.com/git/git.git git-src
-          fi
+            - name: Fetch git.git
+              run: |
+                  if [ -d git-src/.git ]; then
+                    git -C git-src fetch --quiet origin master
+                    git -C git-src checkout --quiet FETCH_HEAD
+                  else
+                    git clone --quiet https://github.com/git/git.git git-src
+                  fi
 
-      - name: Build report
-        run: deno task dev git-src
+            - name: Build report
+              run: deno task dev git-src
 
-      - name: Commit if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add WhatToGit.md
-          git diff --staged --quiet || git commit -m "report: refresh WhatToGit.md"
-          git push
+            - name: Commit if changed
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add WhatToGit.md
+                  git diff --staged --quiet || git commit -m "report: refresh WhatToGit.md"
+                  git push
