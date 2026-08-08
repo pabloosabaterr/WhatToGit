@@ -108,10 +108,21 @@ export class Report {
                 out.push(`\`${file}\` (${entries.length})`, "");
 
                 for (const marker of entries) {
-                    out.push(
-                        `- ${marker.date} \`${marker.commit}\` ` +
-                            `[L${marker.line}](${marker.url}) \`${marker.summary}\``,
-                    );
+                    const head =
+                        `- ${marker.date} \`${marker.commit}\` [L${marker.line}](${marker.url})`;
+
+                    if (marker.block) {
+                        out.push(
+                            head,
+                            "",
+                            "  ```",
+                            ...marker.block.map((l) => `  ${l}`),
+                            "  ```",
+                            "",
+                        );
+                    } else {
+                        out.push(`${head} \`${marker.summary}\``);
+                    }
                 }
                 out.push("");
             }

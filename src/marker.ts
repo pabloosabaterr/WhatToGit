@@ -13,6 +13,7 @@ export class Marker {
         readonly line: number,
         readonly text: string,
         private readonly blame: BlameLine | null,
+        readonly block: string[] | null = null,
     ) {}
 
     get commit(): string {

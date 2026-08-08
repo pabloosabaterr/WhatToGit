@@ -53,4 +53,9 @@ export class Git {
             version: await this.line("describe --tags --always"),
         };
     }
+
+    async fileLines(path: string): Promise<string[]> {
+        const { code, stdout } = await this.doCommand("show", `HEAD:${path}`);
+        return code === 0 ? stdout.split("\n") : [];
+    }
 }
