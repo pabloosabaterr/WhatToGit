@@ -1,6 +1,6 @@
-# TODO / NEEDSWORK / FIXME / XXX markers in git
+# TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-409 lines in total, at HEAD `93eec172` (v2.55.0-504-g93eec17209). Collected on 2026-08-08.
+410 lines in total, at HEAD `010afd31` (v2.55.0-540-g010afd3166). Collected on 2026-08-08.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -12,7 +12,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 | Marker | Count |
 | --- | --- |
-| TODO | 207 |
+| TODO | 208 |
 | NEEDSWORK | 122 |
 | FIXME | 40 |
 | XXX | 41 |
@@ -22,7 +22,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | Directory | Count |
 | --- | --- |
 | (root) | 156 |
-| builtin | 55 |
+| builtin | 56 |
 | compat | 8 |
 | contrib | 11 |
 | Documentation | 16 |
@@ -63,7 +63,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | 2023 | 17 |
 | 2024 | 20 |
 | 2025 | 19 |
-| 2026 | 33 |
+| 2026 | 34 |
 
 ## Full listing
 
@@ -119,7 +119,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `branch.c` (1)
 
-- 2022-01-28 `961b130d` [L803](https://github.com/git/git/blob/master/branch.c#L803)
+- 2022-01-28 `961b130d` [L837](https://github.com/git/git/blob/master/branch.c#L837)
 
   ```
   /*
@@ -983,7 +983,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `odb.h` (1)
 
-- 2025-07-01 `e989dd96` [L444](https://github.com/git/git/blob/master/odb.h#L444)
+- 2025-07-01 `e989dd96` [L489](https://github.com/git/git/blob/master/odb.h#L489)
 
   ```
   /*
@@ -1309,8 +1309,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-09-27 `1b5f3733` [L4106](https://github.com/git/git/blob/master/sequencer.c#L4106) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
-- 2020-11-02 `14c4586c` [L4399](https://github.com/git/git/blob/master/sequencer.c#L4399)
+- 2021-09-27 `1b5f3733` [L4124](https://github.com/git/git/blob/master/sequencer.c#L4124) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+- 2020-11-02 `14c4586c` [L4417](https://github.com/git/git/blob/master/sequencer.c#L4417)
 
   ```
   /*
@@ -1321,7 +1321,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-07-15 `42554b78` [L5023](https://github.com/git/git/blob/master/sequencer.c#L5023)
+- 2026-07-15 `42554b78` [L5041](https://github.com/git/git/blob/master/sequencer.c#L5041)
 
   ```
   /*
@@ -1366,7 +1366,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `sparse-index.c` (1)
 
-- 2021-07-14 `fc6609d1` [L218](https://github.com/git/git/blob/master/sparse-index.c#L218)
+- 2021-07-14 `fc6609d1` [L225](https://github.com/git/git/blob/master/sparse-index.c#L225)
 
   ```
   /*
@@ -1554,11 +1554,22 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 </details>
 
 <details>
-<summary><b>builtin</b> &mdash; 55 markers</summary>
+<summary><b>builtin</b> &mdash; 56 markers</summary>
 
 `builtin/am.c` (1)
 
 - 2021-09-27 `1b5f3733` [L2017](https://github.com/git/git/blob/master/builtin/am.c#L2017) `opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+
+`builtin/cat-file.c` (1)
+
+- 2026-07-24 `0ae93f56` [L852](https://github.com/git/git/blob/master/builtin/cat-file.c#L852)
+
+  ```
+  /*
+   * TODO: Use the default format once %(objecttype) is supported.
+   */
+  ```
+
 
 `builtin/checkout.c` (2)
 
@@ -1783,7 +1794,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/gc.c` (1)
 
-- 2025-11-08 `28b83e6f` [L3494](https://github.com/git/git/blob/master/builtin/gc.c#L3494)
+- 2025-11-08 `28b83e6f` [L3118](https://github.com/git/git/blob/master/builtin/gc.c#L3118)
 
   ```
   /*
@@ -2882,14 +2893,14 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `t/t1092-sparse-checkout-compatibility.sh` (10)
 
-- 2021-07-20 `70569fad` [L565](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L565)
+- 2021-07-20 `70569fad` [L613](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L613)
 
   ```
   # NEEDSWORK: sparse-checkout behaves differently from full-checkout when
   # running this test with 'df-conflict-2' after 'df-conflict-1'.
   ```
 
-- 2022-01-11 `e015d4d9` [L831](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L831)
+- 2022-01-11 `e015d4d9` [L879](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L879)
 
   ```
   # NEEDSWORK: `--remove`, unlike the rest of `update-index`, does not ignore
@@ -2899,7 +2910,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # from the index.
   ```
 
-- 2021-09-24 `105e8b01` [L1106](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1106)
+- 2021-09-24 `105e8b01` [L1154](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1154)
 
   ```
   # 2. Add the file with conflict markers
@@ -2908,7 +2919,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # warn that this is a problematic add.
   ```
 
-- 2021-09-24 `105e8b01` [L1117](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1117)
+- 2021-09-24 `105e8b01` [L1165](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1165)
 
   ```
   # 3. Rename the file to another sparse filename and
@@ -2918,14 +2929,14 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # existing index entry with the SKIP_WORKTREE bit cleared.
   ```
 
-- 2021-07-14 `e5ca2910` [L1919](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1919)
+- 2021-07-14 `e5ca2910` [L1967](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1967)
 
   ```
   # NEEDSWORK: a sparse-checkout behaves differently from a full checkout
   # in this scenario, but it shouldn't.
   ```
 
-- 2021-07-20 `70569fad` [L1954](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L1954)
+- 2021-07-20 `70569fad` [L2002](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2002)
 
   ```
   # NEEDSWORK: 'git checkout' behaves incorrectly in the case of
@@ -2934,7 +2945,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # measure of how it _should_ behave.
   ```
 
-- 2021-07-20 `70569fad` [L2007](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2007)
+- 2021-07-20 `70569fad` [L2055](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2055)
 
   ```
   # NEEDSWORK: 'git checkout' behaves incorrectly in the case of
@@ -2943,7 +2954,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # measure of how it _should_ behave.
   ```
 
-- 2022-09-22 `7cae7627` [L2210](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2210)
+- 2022-09-22 `7cae7627` [L2258](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2258)
 
   ```
   	ensure_not_expanded grep --cached a -- "deep/*"
@@ -2963,7 +2974,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   	git grep --cached --recurse-submodules a -- "*/folder1/*" &&
   ```
 
-- 2022-09-22 `7cae7627` [L2225](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2225)
+- 2022-09-22 `7cae7627` [L2273](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2273)
 
   ```
   # NEEDSWORK: this test is not actually testing the code. The design purpose
@@ -2974,7 +2985,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # we don't have the ideal test environment yet.
   ```
 
-- 2023-08-11 `4723ae10` [L2442](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2442)
+- 2023-08-11 `4723ae10` [L2490](https://github.com/git/git/blob/master/t/t1092-sparse-checkout-compatibility.sh#L2490)
 
   ```
   # NEEDSWORK: The 'diff --check' test is left as 'test_expect_failure' due
