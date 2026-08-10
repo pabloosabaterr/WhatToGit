@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-410 lines in total, at HEAD `010afd31` (v2.55.0-540-g010afd3166). Collected on 2026-08-08.
+410 lines in total, at HEAD `010afd31` (v2.55.0-540-g010afd3166). Collected on 2026-08-10.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
