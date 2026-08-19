@@ -25,6 +25,6 @@
         }
     },
     "tasks": {
-        "dev": "deno run --allow-run=git --allow-env=HOME --allow-write=WhatToGit.md src/main.ts"
+        "dev": "deno run --allow-net --allow-run=git --allow-env=HOME --allow-write src/main.ts"
     }
 }

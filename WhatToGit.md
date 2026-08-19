@@ -1,6 +1,6 @@
-# TODO / NEEDSWORK / FIXME / XXX markers in git-src
+# TODO / NEEDSWORK / FIXME / XXX markers in git
 
-410 lines in total, at HEAD `010afd31` (v2.55.0-540-g010afd3166). Collected on 2026-08-10.
+410 lines in total, at HEAD `dea0ea35` (v2.55.0-590-gdea0ea3582). Collected on 2026-08-19.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -87,8 +87,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `Makefile` (2)
 
-- 2022-05-26 `b9832f7e` [L3201](https://github.com/git/git/blob/master/Makefile#L3201) `### TODO FIXME: Translating everything in these files is a bad`
-- 2025-04-23 `04a13ed8` [L3476](https://github.com/git/git/blob/master/Makefile#L3476) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
+- 2022-05-26 `b9832f7e` [L3205](https://github.com/git/git/blob/master/Makefile#L3205) `### TODO FIXME: Translating everything in these files is a bad`
+- 2025-04-23 `04a13ed8` [L3480](https://github.com/git/git/blob/master/Makefile#L3480) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
 
 `apply.c` (3)
 
@@ -303,7 +303,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2019-04-05 `7fbbcb21` [L7470](https://github.com/git/git/blob/master/diff.c#L7470)
+- 2019-04-05 `7fbbcb21` [L7447](https://github.com/git/git/blob/master/diff.c#L7447)
 
   ```
   /*
@@ -790,7 +790,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `http-push.c` (1)
 
-- 2009-01-17 `20642801` [L1124](https://github.com/git/git/blob/master/http-push.c#L1124)
+- 2009-01-17 `20642801` [L1125](https://github.com/git/git/blob/master/http-push.c#L1125)
 
   ```
   /*
@@ -948,7 +948,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `meson.build` (1)
 
-- 2025-04-23 `04a13ed8` [L2278](https://github.com/git/git/blob/master/meson.build#L2278) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
+- 2025-04-23 `04a13ed8` [L2279](https://github.com/git/git/blob/master/meson.build#L2279) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
 
 `midx.c` (1)
 
@@ -1050,7 +1050,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `read-cache.c` (4)
 
-- 2022-09-28 `4a6ed30f` [L1844](https://github.com/git/git/blob/master/read-cache.c#L1844)
+- 2022-09-28 `4a6ed30f` [L1858](https://github.com/git/git/blob/master/read-cache.c#L1858)
 
   ```
   /*
@@ -1063,9 +1063,9 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2018-10-10 `77ff1127` [L2260](https://github.com/git/git/blob/master/read-cache.c#L2260) `/* TODO: does creating more threads than cores help? */`
-- 2021-04-01 `0c18c059` [L2532](https://github.com/git/git/blob/master/read-cache.c#L2532) `/* TODO: audit for interaction with sparse-index. */`
-- 2023-05-16 `1a40e7be` [L3816](https://github.com/git/git/blob/master/read-cache.c#L3816) `/* TODO: audit for interaction with sparse-index. */`
+- 2018-10-10 `77ff1127` [L2274](https://github.com/git/git/blob/master/read-cache.c#L2274) `/* TODO: does creating more threads than cores help? */`
+- 2021-04-01 `0c18c059` [L2546](https://github.com/git/git/blob/master/read-cache.c#L2546) `/* TODO: audit for interaction with sparse-index. */`
+- 2023-05-16 `1a40e7be` [L3830](https://github.com/git/git/blob/master/read-cache.c#L3830) `/* TODO: audit for interaction with sparse-index. */`
 
 `ref-filter.c` (2)
 
@@ -1174,7 +1174,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `rerere.c` (4)
 
-- 2015-06-30 `4b68c2a0` [L553](https://github.com/git/git/blob/master/rerere.c#L553)
+- 2015-06-30 `4b68c2a0` [L527](https://github.com/git/git/blob/master/rerere.c#L527)
 
   ```
   /*
@@ -1190,7 +1190,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2015-06-30 `4b68c2a0` [L589](https://github.com/git/git/blob/master/rerere.c#L589)
+- 2015-06-30 `4b68c2a0` [L563](https://github.com/git/git/blob/master/rerere.c#L563)
 
   ```
   /*
@@ -1210,7 +1210,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2016-03-14 `3d730ed9` [L1013](https://github.com/git/git/blob/master/rerere.c#L1013)
+- 2016-03-14 `3d730ed9` [L987](https://github.com/git/git/blob/master/rerere.c#L987)
 
   ```
   /*
@@ -1219,7 +1219,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2015-06-30 `e828de82` [L1290](https://github.com/git/git/blob/master/rerere.c#L1290)
+- 2015-06-30 `e828de82` [L1264](https://github.com/git/git/blob/master/rerere.c#L1264)
 
   ```
   /*
@@ -1919,7 +1919,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/mv.c` (1)
 
-- 2022-08-09 `5784db1b` [L580](https://github.com/git/git/blob/master/builtin/mv.c#L580)
+- 2022-08-09 `5784db1b` [L621](https://github.com/git/git/blob/master/builtin/mv.c#L621)
 
   ```
   /*
@@ -3096,7 +3096,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `t/t5550-http-fetch-dumb.sh` (1)
 
-- 2020-04-18 `e7fab62b` [L442](https://github.com/git/git/blob/master/t/t5550-http-fetch-dumb.sh#L442)
+- 2020-04-18 `e7fab62b` [L646](https://github.com/git/git/blob/master/t/t5550-http-fetch-dumb.sh#L646)
 
   ```
   # NEEDSWORK: Writing commands to git-remote-curl can race against the latter

@@ -16,8 +16,9 @@ export class Block {
      * @param {number} line the line holding the marker.
      */
     at(line: number): string[] {
-        if (line <= 0 || line > this.lines.length)
+        if (line <= 0 || line > this.lines.length) {
             return [];
+        }
 
         const [start, end] = this.blockSpan(line) ?? this.lineSpan(line) ?? [line, line];
         return Block.dedent(this.lines.slice(start - 1, end));
@@ -40,8 +41,9 @@ export class Block {
      */
     private blockSpan(line: number): [number, number] | null {
         const start = this.up(line);
-        if (start === null)
+        if (start === null) {
             return null;
+        }
 
         const end = this.down(line);
         return end === null ? null : [start, end];
@@ -56,10 +58,12 @@ export class Block {
         for (let i = line; i >= 1 && line - i < MAX_LINES; i--) {
             const l = this.text(i);
 
-            if (i < line && l.lastIndexOf(CLOSE) > l.lastIndexOf(OPEN))
+            if (i < line && l.lastIndexOf(CLOSE) > l.lastIndexOf(OPEN)) {
                 return null;
-            if (l.includes(OPEN))
+            }
+            if (l.includes(OPEN)) {
                 return i;
+            }
         }
 
         return null;
@@ -76,10 +80,12 @@ export class Block {
             const open = l.indexOf(OPEN);
             const close = l.indexOf(CLOSE);
 
-            if (i > line && open >= 0 && (close < 0 || open < close))
+            if (i > line && open >= 0 && (close < 0 || open < close)) {
                 return null;
-            if (close >= 0)
+            }
+            if (close >= 0) {
                 return i;
+            }
         }
 
         return null;
@@ -93,15 +99,18 @@ export class Block {
      */
     private lineSpan(line: number): [number, number] | null {
         const token = this.token(line);
-        if (token === null)
+        if (token === null) {
             return null;
+        }
 
         let start = line;
         let end = line;
-        while (start > 1 && line - start < MAX_LINES && this.token(start - 1) === token)
+        while (start > 1 && line - start < MAX_LINES && this.token(start - 1) === token) {
             start--;
-        while (end < this.lines.length && end - line < MAX_LINES && this.token(end + 1) === token)
+        }
+        while (end < this.lines.length && end - line < MAX_LINES && this.token(end + 1) === token) {
             end++;
+        }
 
         return [start, end];
     }
@@ -113,11 +122,13 @@ export class Block {
      */
     private token(line: number): string | null {
         const text = this.text(line).trimStart();
-        if (text.startsWith("//"))
+        if (text.startsWith("//")) {
             return "//";
+        }
 
-        if (text === "#" || text.startsWith("# ") || text.startsWith("#\t"))
+        if (text === "#" || text.startsWith("# ") || text.startsWith("#\t")) {
             return "#";
+        }
 
         return null;
     }
