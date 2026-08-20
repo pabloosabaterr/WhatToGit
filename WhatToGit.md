@@ -1,4 +1,4 @@
-# TODO / NEEDSWORK / FIXME / XXX markers in git
+# TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
 410 lines in total, at HEAD `dea0ea35` (v2.55.0-590-gdea0ea3582). Collected on 2026-08-20.
 
