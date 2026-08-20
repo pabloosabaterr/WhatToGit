@@ -15,9 +15,12 @@
 > [!NOTE]
 > Links already come in descending order: newer #leftoverbits are listed first.
 
+> [!IMPORTANT]
+> You can help trim this list by adding the link to the `bitignore` file or by sending a patch
+> that solves the #leftoverbits, your choice! ;)
+
 # Clean #leftoverbits
 
-- https://lore.kernel.org/git/20260813191234.1066662-4-gitster@pobox.com/
 - https://lore.kernel.org/git/xmqqecg3xnwx.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqq1pcryp6j.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqse5870oe.fsf@gitster.g/
@@ -25,11 +28,6 @@
 - https://lore.kernel.org/git/CAOLa=ZSwupDzWKk0bq=N+O8U0NV9y3h3hFsAeN8WJF-Nwj5vVw@mail.gmail.com/
 - https://lore.kernel.org/git/xmqqldeb9w8e.fsf@gitster.g/
 - https://lore.kernel.org/git/CAOLa=ZQ=UdVvFVNCt8s-jqx1Aai1KmfzbEF1quHS3OG09vT5Vg@mail.gmail.com/
-- https://lore.kernel.org/git/20260419165453.32593-1-deveshigurgaon@gmail.com/
-- https://lore.kernel.org/git/20260412195204.4636-1-deveshigurgaon@gmail.com/
-- https://lore.kernel.org/git/20260405110953.3316-1-deveshigurgaon@gmail.com/
-- https://lore.kernel.org/git/20260404160357.11534-1-deveshigurgaon@gmail.com/
-- https://lore.kernel.org/git/20260404143640.6679-1-deveshigurgaon@gmail.com/
 - https://lore.kernel.org/git/6b5a5bd8-0631-4c1b-b87b-c75d99dc9c50@bluewin.ch/
 - https://lore.kernel.org/git/875x6j2a7v.fsf@iotcl.com/
 - https://lore.kernel.org/git/xmqqcy0t178a.fsf_-_@gitster.g/
@@ -41,9 +39,6 @@
 - https://lore.kernel.org/git/xmqqjyvdvo7t.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqikaywchl.fsf@gitster.g/
 - https://lore.kernel.org/git/20260310041929.1687483-1-pabloosabaterr@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v11.git.git.1772693712.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v10.git.git.1772673378.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v9.git.git.1772671920.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/aafiaS-DscdIkori@pks.im/
 - https://lore.kernel.org/git/aZwwchZjnSMTiN0m@pks.im/
 - https://lore.kernel.org/git/aWG8DT3swDVJLS8m@lorenzo-VM/
@@ -53,7 +48,6 @@
 - https://lore.kernel.org/git/aS1dcz6i5_phTUEG@pks.im/
 - https://lore.kernel.org/git/xmqqtsyirpxt.fsf@gitster.g/
 - https://lore.kernel.org/git/aRVIh9R8Pnuk+yS0@nand.local/
-- https://lore.kernel.org/git/20251112220258.1009253-5-gitster@pobox.com/
 - https://lore.kernel.org/git/CAD=f0L_F-c-xACU8z+2GwgBwzVsZBLcMvtVbuB3phC73_xHBoA@mail.gmail.com/
 - https://lore.kernel.org/git/xmqqh5v5hmat.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqwm47unw3.fsf@gitster.g/
@@ -97,43 +91,24 @@
 - https://lore.kernel.org/git/20250205030642.95252-1-ben.knoble+github@gmail.com/
 - https://lore.kernel.org/git/CAOLa=ZSoiEeJqP8GDdyStOjNaw6itAHjJH=t28jp1tssjAun5Q@mail.gmail.com/
 - https://lore.kernel.org/git/Z5599iKKWOQ1KHXI@tapette.crustytoothpaste.net/
-- https://lore.kernel.org/git/20250201134023.27695-1-dhar61595@gmail.com/
-- https://lore.kernel.org/git/20250201131331.23233-1-dhar61595@gmail.com/
-- https://lore.kernel.org/git/20250201125851.21079-1-dhar61595@gmail.com/
 - https://lore.kernel.org/git/xmqqldusarsa.fsf@gitster.g/
 - https://lore.kernel.org/git/CAGJzqs=MSc3VS0HO4OwXgBFJ+zBpj-CxKkLnsqbqVdnuEu_0Xg@mail.gmail.com/
 - https://lore.kernel.org/git/CAGJzqs=rtJ3yv2YCTTphsrE=0_1EpZXCA+pGNLuTVQNps9TNzg@mail.gmail.com/
 - https://lore.kernel.org/git/xmqq1px55mwy.fsf@gitster.g/
-- https://lore.kernel.org/git/pull.1867.v2.git.git.1736844538005.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/xmqqv7umb2lf.fsf@gitster.g/
 - https://lore.kernel.org/git/20250110210500.675629-1-mirth.hickford@gmail.com/
-- https://lore.kernel.org/git/pull.1867.git.git.1736080517950.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/CAOLa=ZTx3T=md4VQ6tRb5U41nOHsbhTB5d6VsmyUHFxHgQQ88g@mail.gmail.com/
 - https://lore.kernel.org/git/xmqqfrn0ui7f.fsf@gitster.g/
-- https://lore.kernel.org/git/20241104174628.GA2990236@coredump.intra.peff.net/
-- https://lore.kernel.org/git/20241104172722.GA2989472@coredump.intra.peff.net/
-- https://lore.kernel.org/git/20241101172939.GA2337295@coredump.intra.peff.net/
 - https://lore.kernel.org/git/ZyEa61qMRWZTS3Lt@nand.local/
 - https://lore.kernel.org/git/CAOLa=ZS_75M+1ujTfW3MpV8km+G8sFB3Rn6p7zEXnK9qVycg=A@mail.gmail.com/
 - https://lore.kernel.org/git/Zx+2YRqoIOwE0ysU@nand.local/
-- https://lore.kernel.org/git/CAPSxiM-EorSBsStHCFAm845q2H+YNDtAvCkwON8cV4AyYvGz_w@mail.gmail.com/
-- https://lore.kernel.org/git/CAPSxiM-4okXfiWZtSNArMjfXzja9wBrMaEayhqt1hvJpu-PHkQ@mail.gmail.com/
-- https://lore.kernel.org/git/pull.1810.v2.git.git.1729259580.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/877ca5d3dn.fsf@iotcl.com/
 - https://lore.kernel.org/git/CAO1n886ZRRD6m_GQsYz-AGwpbkDB4S+0+hRx-9mmN=6iJ1o7Mg@mail.gmail.com/
 - https://lore.kernel.org/git/ZxALiDHkkq4yIP8R@nand.local/
-- https://lore.kernel.org/git/CAPSxiM9jHn-RQ3FXJRQNKAE9xPr_4yJbWB--oWgQeKhEMLmE4Q@mail.gmail.com/
-- https://lore.kernel.org/git/CAPSxiM-aptyjesMX1H-P5QJjA-6CUonA01Bo84cq2_t==TqFgw@mail.gmail.com/
-- https://lore.kernel.org/git/CAPSxiM9ncwaZ3HF72wsRwmen7joWk3mjipsu78WxKEzLX607sw@mail.gmail.com/
-- https://lore.kernel.org/git/c93bc2d81ffb33a2a61dda2878fa3b9987545e0b.1728774574.git.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/ZwqcHDzaR2U2JNu0@nand.local/
-- https://lore.kernel.org/git/CAPSxiM9FoGBhsnBE4E0Fvq-x_HvyFGGkkhaLNoRdVkvE6CpaZw@mail.gmail.com/
 - https://lore.kernel.org/git/875xq0s4in.fsf@iotcl.com/
 - https://lore.kernel.org/git/CADYq+fb9ux6K+m-8y0owopt_zKJmXXYLh6Rswot3r7UNX30LAQ@mail.gmail.com/
 - https://lore.kernel.org/git/ZwPG3QHarKerpN3K@pks.im/
-- https://lore.kernel.org/git/cf5fea7a-c711-4d35-9c6e-fe96778a3f85@gmail.com/
-- https://lore.kernel.org/git/1fc0d162-9814-4d94-ac67-2ea8e40495f4@gmail.com/
-- https://lore.kernel.org/git/5f4290f6-7c9b-47ee-b867-c9904ce0ccab@gmail.com/
 - https://lore.kernel.org/git/xmqqsetr5wl1.fsf@gitster.g/
 - https://lore.kernel.org/git/Zu78E+0Uk5fMSeQv@five231003/
 - https://lore.kernel.org/git/CAOLa=ZSMFaAiKe5wVck+jikcfLgqjKgvu8qGTi=6kT8-n2BhJg@mail.gmail.com/
@@ -255,27 +230,17 @@
 - https://lore.kernel.org/git/YikPXN5xobn+Y/Jn@nand.local/
 - https://lore.kernel.org/git/xmqqfsnrkkhd.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqk0d9z7nc.fsf@gitster.g/
-- https://lore.kernel.org/git/8b1f89c259e46f5b09f24e1e94614136365e4f69.1645999021.git.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/xmqqr17qbw8l.fsf@gitster.g/
 - https://lore.kernel.org/git/YhbEiLAX06LekNiR@nand.local/
 - https://lore.kernel.org/git/xmqq35k9qjeq.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqa6ehtgz5.fsf@gitster.g/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.2202221309220.11118@tvgsbejvaqbjf.bet/
 - https://lore.kernel.org/git/CABPp-BESAh6wLComJoYsf7Q7NF2EMPptKRhfAoy=1-ZRZovnaQ@mail.gmail.com/
-- https://lore.kernel.org/git/patch-v3-4.5-5c244960133-20220216T081203Z-avarab@gmail.com/
 - https://lore.kernel.org/git/xmqq35kufahb.fsf@gitster.g/
-- https://lore.kernel.org/git/patch-v2-4.5-3f70b1aa4c5-20220204T235143Z-avarab@gmail.com/
 - https://lore.kernel.org/git/xmqq5ypvpgzr.fsf@gitster.g/
-- https://lore.kernel.org/git/patch-4.5-aab2ae9cc72-20220202T195651Z-avarab@gmail.com/
 - https://lore.kernel.org/git/xmqqfspas45g.fsf@gitster.g/
 - https://lore.kernel.org/git/CABPp-BGSVzEwk83EzhPn3+5jOt5q6=CQ2W_Uz6GfUR=2=AhgNg@mail.gmail.com/
 - https://lore.kernel.org/git/CABPp-BEEpboXxs6dghCagj2oXkXKX9aNQGLmUmQRa5m3jj2--w@mail.gmail.com/
-- https://lore.kernel.org/git/patch-v2-07.21-7db3b446632-20211016T093845Z-avarab@gmail.com/
-- https://lore.kernel.org/git/cover-0.2-00000000000-20211014T004542Z-avarab@gmail.com/
-- https://lore.kernel.org/git/patch-06.20-3162bf28505-20211013T235900Z-avarab@gmail.com/
-- https://lore.kernel.org/git/patch-v2-1.2-55bde16aa23-20211004T142523Z-avarab@gmail.com/
-- https://lore.kernel.org/git/cover-v2-0.2-00000000000-20211004T142523Z-avarab@gmail.com/
-- https://lore.kernel.org/git/patch-1.1-6e65734cbce-20210924T100532Z-avarab@gmail.com/
 - https://lore.kernel.org/git/87fsu4f729.fsf@evledraar.gmail.com/
 - https://lore.kernel.org/git/877dfocps2.fsf@evledraar.gmail.com/
 - https://lore.kernel.org/git/87lf47kgkh.fsf@evledraar.gmail.com/
@@ -341,9 +306,6 @@
 - https://lore.kernel.org/git/xmqqftif2wg7.fsf@gitster-ct.c.googlers.com/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.1909261341300.15067@tvgsbejvaqbjf.bet/
 - https://lore.kernel.org/git/CABPp-BFOyVaK=hvWZtXfBmiSvf2DXf3c-GvPBt7kBu9wtCZSGg@mail.gmail.com/
-- https://lore.kernel.org/git/20190905222736.GA29792@syl.local/
-- https://lore.kernel.org/git/20190905222526.GA29743@syl.local/
-- https://lore.kernel.org/git/0598bbf4d0b2cb07ff6f06f904cbdd3f5a3ae1af.1567721303.git.liu.denton@gmail.com/
 - https://lore.kernel.org/git/xmqqmufipmfp.fsf@gitster-ct.c.googlers.com/
 - https://lore.kernel.org/git/20190905184716.GA12647@sigill.intra.peff.net/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.1908281333030.46@tvgsbejvaqbjf.bet/
@@ -372,7 +334,6 @@
 - https://lore.kernel.org/git/a08d8e20-ecb5-3135-f294-56dec1730b5f@web.de/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.1810311542560.4546@tvgsbejvaqbjf.bet/
 - https://lore.kernel.org/git/87k1m1kwk0.fsf@evledraar.gmail.com/
-- https://lore.kernel.org/git/20181028225023.26427-3-avarab@gmail.com/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.1810121345160.561@tvgsbejvaqbjf.bet/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.1810100856570.2034@tvgsbejvaqbjf.bet/
 - https://lore.kernel.org/git/nycvar.QRO.7.76.6.1810042136430.73@tvgsbejvaqbjf.bet/
@@ -394,7 +355,6 @@
 - https://lore.kernel.org/git/CAP8UFD3_+0EDSzcrx9f70HBpWKvr94re5ZimuXDhfTZzJpfCvQ@mail.gmail.com/
 - https://lore.kernel.org/git/xmqqvaa6ohiw.fsf@gitster-ct.c.googlers.com/
 - https://lore.kernel.org/git/20180624085622.GA28575@sigill.intra.peff.net/
-- https://lore.kernel.org/git/cover.1529365072.git.me@ttaylorr.com/
 - https://lore.kernel.org/git/20180519015743.GB32492@sigill.intra.peff.net/
 - https://lore.kernel.org/git/20180512032733.GA65308@syl.local/
 - https://lore.kernel.org/git/20180212172921.GA5004@sigill.intra.peff.net/
@@ -403,7 +363,6 @@
 - https://lore.kernel.org/git/CAP8UFD26ZJQWtfzETHXjPoKWyL0f3qEuimohVysYo0WtmpSyBg@mail.gmail.com/
 - https://lore.kernel.org/git/c2e041ab-4c29-99a8-2de9-a68e986c225c@gmail.com/
 - https://lore.kernel.org/git/xmqqtvxojufd.fsf@gitster.mtv.corp.google.com/
-- https://lore.kernel.org/git/20171120222529.24995-2-sbeller@google.com/
 - https://lore.kernel.org/git/CAGZ79ka+5o07cz4A8=Gu_VqO1hYqqO=8Ju1uAaDY23s7xjCWvw@mail.gmail.com/
 - https://lore.kernel.org/git/CAP8UFD23ALBQO=kfeKrf4YXFigtC79mLtnBuXtTgjbeqPFE76Q@mail.gmail.com/
 - https://lore.kernel.org/git/xmqq8tf4qmu8.fsf@gitster.mtv.corp.google.com/
@@ -457,18 +416,12 @@
 - https://lore.kernel.org/git/pull.2364.git.git.1784993669.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/20260513185408.GA147423@coredump.intra.peff.net/
 - https://lore.kernel.org/git/cfd09dbf-8d77-4464-8030-3a0ffb4aeae7@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v15.git.git.1776259657.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v14.git.git.1775710775.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v13.git.git.1775498098.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/pull.2147.v12.git.git.1774937958.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/xmqqtsu1jipp.fsf@gitster.g/
-- https://lore.kernel.org/git/pull.2147.v8.git.git.1772648125.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/xmqqbjhjxp2d.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqqzrp74q3.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqy0mwsedz.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqq5xa76z0o.fsf@gitster.g/
 - https://lore.kernel.org/git/xmqqh5usiizp.fsf@gitster.g/
-- https://lore.kernel.org/git/20251112220258.1009253-1-gitster@pobox.com/
 - https://lore.kernel.org/git/xmqqseg9azdc.fsf@gitster.g/
 - https://lore.kernel.org/git/20250731225433.4028872-1-gitster@pobox.com/
 - https://lore.kernel.org/git/xmqqecu9w4a5.fsf@gitster.g/
@@ -478,7 +431,6 @@
 - https://lore.kernel.org/git/CAOLa=ZSj11TSTs6CywSX1Q9AAfW28zssS2yrGf8PmBOgd06Etg@mail.gmail.com/
 - https://lore.kernel.org/git/ZysQvUyxgdRqjvj2@pks.im/
 - https://lore.kernel.org/git/e4a70501-af2d-450a-a232-4c7952196a74@gmail.com/
-- https://lore.kernel.org/git/CAPSxiM_rvt-tkQjHYmYNv-Wyr0=X4+123dt=vZKtc++PGRjQMQ@mail.gmail.com/
 - https://lore.kernel.org/git/xmqqa5h5ztd9.fsf@gitster.g/
 - https://lore.kernel.org/git/Zrm9ix5aN_g76Qxq@tanuki/
 - https://lore.kernel.org/git/20240806003539.3292562-1-gitster@pobox.com/
@@ -496,15 +448,10 @@
 - https://lore.kernel.org/git/221208.86fsdq6nci.gmgdl@evledraar.gmail.com/
 - https://lore.kernel.org/git/221116.86a64rkdcj.gmgdl@evledraar.gmail.com/
 - https://lore.kernel.org/git/CABPp-BG=pm8gfRZNW8Rk1V77s40Do1FZy0mxH6epubHbzF8U5w@mail.gmail.com/
-- https://lore.kernel.org/git/pull.1348.v2.git.1663614767058.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/pull.1348.git.1662747205235.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/220723.86pmhwquie.gmgdl@evledraar.gmail.com/
-- https://lore.kernel.org/git/pull.1247.v5.git.1658255624.gitgitgadget@gmail.com/
-- https://lore.kernel.org/git/cover.1657819649.git.matheus.bernardino@usp.br/
 - https://lore.kernel.org/git/xmqqfsj4dhfi.fsf@gitster.g/
 - https://lore.kernel.org/git/dd9413da-1b8c-2adf-c471-e5fd4230375c@github.com/
 - https://lore.kernel.org/git/xmqq1qzmy55g.fsf@gitster.g/
-- https://lore.kernel.org/git/pull.986.v3.git.1645999021.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/xmqqmtjh0x5f.fsf@gitster.g/
 - https://lore.kernel.org/git/871r801yp6.fsf@evledraar.gmail.com/
 - https://lore.kernel.org/git/xmqqa6pt98j4.fsf@gitster.g/
@@ -512,13 +459,11 @@
 - https://lore.kernel.org/git/1adabda6-b80b-d543-f6c0-570dadbe589b@gmail.com/
 - https://lore.kernel.org/git/20201223013606.7972-1-avarab@gmail.com/
 - https://lore.kernel.org/git/xmqqlfeuqd8d.fsf@gitster.c.googlers.com/
-- https://lore.kernel.org/git/pull.795.v3.git.git.1590870357549.gitgitgadget@gmail.com/
 - https://lore.kernel.org/git/20190904212121.GB20904@syl.local/
 - https://lore.kernel.org/git/20190904194114.GA31398@sigill.intra.peff.net/
 - https://lore.kernel.org/git/87pnms7kv0.fsf@evledraar.gmail.com/
 - https://lore.kernel.org/git/20181116173105.21784-1-chriscool@tuxfamily.org/
 - https://lore.kernel.org/git/20181113153235.25402-1-avarab@gmail.com/
-- https://lore.kernel.org/git/20181030184331.27264-3-avarab@gmail.com/
 - https://lore.kernel.org/git/87tvm3go42.fsf@evledraar.gmail.com/
 - https://lore.kernel.org/git/87o9debty4.fsf@evledraar.gmail.com/
 - https://lore.kernel.org/git/CABPp-BGVVXcbZX44er6TO-PUsfEN_6GNYJ1U5cuoN9deaA48OQ@mail.gmail.com/

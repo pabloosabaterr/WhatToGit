@@ -18,6 +18,11 @@ link straight to it on GitHub.
 time. Split into *clean* (no later message quotes that message ID) and *dirty* (someone has
 referenced it since).
 
+> [!NOTE]
+> You can also help by manually filtering the #leftoverbits. This list contains every
+> #leftoverbits ever posted: some entries are the series that fix them, some are just attempts,
+> and so on. To exclude a link from the list, add it to `bitignore`.
+
 The idea came out of a discussion about what would actually help new contributors: a bug tracker of
 small, real, named tasks. Git doesn't have one, but the codebase is full of notes left behind. Part
 of the motivation is seeing people not knowing how to help.

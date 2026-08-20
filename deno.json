@@ -13,7 +13,7 @@
         "lineWidth": 100,
         "indentWidth": 4,
         "useTabs": false,
-        "exclude": ["WhatToGit.md"]
+        "exclude": ["WhatToGit.md", "leftoverbits.md", "bitignore"]
     },
     "lint": {
         "rules": {
@@ -25,6 +25,6 @@
         }
     },
     "tasks": {
-        "dev": "deno run --allow-net --allow-run=git --allow-env=HOME --allow-write src/main.ts"
+        "dev": "deno run --allow-net --allow-run=git --allow-read --allow-env=HOME --allow-write src/main.ts"
     }
 }

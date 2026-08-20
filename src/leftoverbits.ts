@@ -1,4 +1,3 @@
-const LORE_URL: string = "https://lore.kernel.org/git/?q=nq:leftoverbits&x=m";
 const NOTE: string = [
     "> [!IMPORTANT]",
     "> Note that links even in the clean section may already have been done. Clean links have gone",
@@ -18,6 +17,10 @@ const NOTE: string = [
 const GENERAL_NOTE: string = [
     "> [!NOTE]",
     "> Links already come in descending order: newer #leftoverbits are listed first.",
+    "",
+    "> [!IMPORTANT]",
+    "> You can help trim this list by adding the link to the `bitignore` file or by sending a patch",
+    "> that solves the #leftoverbits, your choice! ;)",
 ].join("\n");
 
 const DIRTY_NOTE: string = [
@@ -28,6 +31,8 @@ const DIRTY_NOTE: string = [
 ].join("\n");
 
 class EmptyBody extends Error {}
+
+const LORE_URL: string = "https://lore.kernel.org/git/?q=nq:leftoverbits&x=m";
 
 export class LeftOverBits {
     constructor(private readonly file: string) {}
@@ -47,18 +52,27 @@ export class LeftOverBits {
         return await new Response(res.body!.pipeThrough(new DecompressionStream("gzip"))).text();
     }
 
+    private async getIgnoredLinks(): Promise<string[]> {
+        let ignoredLinks: string;
+
+        try {
+            ignoredLinks = await Deno.readTextFile("bitignore");
+        } catch (err) {
+            if (err instanceof Deno.errors.NotFound) return [];
+            throw err;
+        }
+
+        return ignoredLinks.split(/\r?\n/).map((line) => line.trim());
+    }
+
     async writeLeftOverBits(): Promise<void> {
         const cleanBits: string[] = [NOTE, "", GENERAL_NOTE, "", "# Clean #leftoverbits", ""];
         const dirtyBits: string[] = ["", "# Dirty #leftoverbits", "", DIRTY_NOTE, ""];
         const mbox = await this.fetchLore(LORE_URL);
         const messages = mbox.split(/\n(?=From )/).filter((m) => m.trim() !== "");
+        const ignoredLinks = new Set(await this.getIgnoredLinks());
 
         for (const message of messages) {
-            /*
-             * Lore returns 503 if we send too fast too many requests.
-             */
-            await new Promise((r) => setTimeout(r, 80));
-
             const headers = message.slice(0, message.indexOf("\n\n")).replace(/\n[ \t]+/g, " ");
             const id = /^message-id:\s*<(.+?)>/im.exec(headers)?.[1];
             if (!id) {
@@ -66,6 +80,13 @@ export class LeftOverBits {
             }
 
             const link: string = `https://lore.kernel.org/git/${id}/`;
+
+            if (ignoredLinks.has(link))
+                continue;
+            /*
+             * Lore returns 503 if we send too fast too many requests.
+             */
+            await new Promise((r) => setTimeout(r, 80));
 
             try {
                 const q = encodeURIComponent(`b:"${id}"`);
