@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-414 lines in total, at HEAD `3cb9185f` (v2.55.0-787-g3cb9185f65). Collected on 2026-09-07.
+414 lines in total, at HEAD `47ce8052` (v2.55.0-861-g47ce80527c). Collected on 2026-09-14.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -993,7 +993,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `meson.build` (1)
 
-- 2025-04-23 `04a13ed8` [L2279](https://github.com/git/git/blob/master/meson.build#L2279) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
+- 2025-04-23 `04a13ed8` [L2292](https://github.com/git/git/blob/master/meson.build#L2292) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
 
 `midx.c` (1)
 
@@ -1402,7 +1402,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `setup.c` (1)
 
-- 2017-06-20 `73f192c9` [L2041](https://github.com/git/git/blob/master/setup.c#L2041)
+- 2017-06-20 `73f192c9` [L2058](https://github.com/git/git/blob/master/setup.c#L2058)
 
   ```
   /*
@@ -2090,7 +2090,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/replay.c` (1)
 
-- 2023-11-24 `8259e415` [L154](https://github.com/git/git/blob/master/builtin/replay.c#L154)
+- 2023-11-24 `8259e415` [L158](https://github.com/git/git/blob/master/builtin/replay.c#L158)
 
   ```
   /*
@@ -2767,7 +2767,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `refs/reftable-backend.c` (4)
 
-- 2025-04-08 `ca89c18d` [L1358](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1358)
+- 2025-04-08 `ca89c18d` [L1357](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1357)
 
   ```
   /*
@@ -2783,7 +2783,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-05-07 `644daf77` [L1563](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1563)
+- 2024-05-07 `644daf77` [L1562](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1562)
 
   ```
   /*
@@ -2793,7 +2793,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-11-26 `46b5f670` [L2212](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2212)
+- 2024-11-26 `46b5f670` [L2209](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2209)
 
   ```
   /*
@@ -2802,7 +2802,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-11-26 `46b5f670` [L2263](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2263)
+- 2024-11-26 `46b5f670` [L2260](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2260)
 
   ```
   /*
