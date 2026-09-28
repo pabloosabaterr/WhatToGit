@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-414 lines in total, at HEAD `d38352cd` (v2.55.0-957-gd38352cd43). Collected on 2026-09-21.
+414 lines in total, at HEAD `34f06850` (v2.55.0-978-g34f06850c1). Collected on 2026-09-28.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -1364,7 +1364,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `sequencer.c` (4)
 
-- 2020-11-02 `14c4586c` [L793](https://github.com/git/git/blob/master/sequencer.c#L793)
+- 2020-11-02 `14c4586c` [L786](https://github.com/git/git/blob/master/sequencer.c#L786)
 
   ```
   /*
@@ -1377,8 +1377,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-09-27 `1b5f3733` [L4133](https://github.com/git/git/blob/master/sequencer.c#L4133) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
-- 2020-11-02 `14c4586c` [L4426](https://github.com/git/git/blob/master/sequencer.c#L4426)
+- 2021-09-27 `1b5f3733` [L4126](https://github.com/git/git/blob/master/sequencer.c#L4126) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+- 2020-11-02 `14c4586c` [L4419](https://github.com/git/git/blob/master/sequencer.c#L4419)
 
   ```
   /*
@@ -1389,7 +1389,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-07-15 `42554b78` [L5080](https://github.com/git/git/blob/master/sequencer.c#L5080)
+- 2026-07-15 `42554b78` [L5073](https://github.com/git/git/blob/master/sequencer.c#L5073)
 
   ```
   /*
@@ -1674,7 +1674,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 `builtin/commit.c` (2)
 
 - 2021-04-01 `cb8388df` [L272](https://github.com/git/git/blob/master/builtin/commit.c#L272) `/* TODO: audit for interaction with sparse-index. */`
-- 2021-04-01 `cb8388df` [L1053](https://github.com/git/git/blob/master/builtin/commit.c#L1053) `/* TODO: audit for interaction with sparse-index. */`
+- 2021-04-01 `cb8388df` [L1041](https://github.com/git/git/blob/master/builtin/commit.c#L1041) `/* TODO: audit for interaction with sparse-index. */`
 
 `builtin/config.c` (1)
 
@@ -2612,13 +2612,13 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `po/AGENTS.md` (7)
 
-- 2026-02-25 `6f8e885f` [L758](https://github.com/git/git/blob/master/po/AGENTS.md#L758) `TODO="po/review-todo.json"`
-- 2026-02-25 `6f8e885f` [L764](https://github.com/git/git/blob/master/po/AGENTS.md#L764) `rm -f "$TODO"`
-- 2026-02-25 `6f8e885f` [L770](https://github.com/git/git/blob/master/po/AGENTS.md#L770) `rm -f "$BATCH_FILE" "$TODO" "$DONE"`
-- 2026-02-25 `6f8e885f` [L779](https://github.com/git/git/blob/master/po/AGENTS.md#L779) `rm -f "$TODO"`
-- 2026-02-25 `6f8e885f` [L803](https://github.com/git/git/blob/master/po/AGENTS.md#L803) `git-po-helper msg-select --json --head "$NUM" -o "$TODO" "$PENDING"`
-- 2026-02-25 `6f8e885f` [L834](https://github.com/git/git/blob/master/po/AGENTS.md#L834) `TODO="po/review-todo.json"`
-- 2026-02-25 `6f8e885f` [L843](https://github.com/git/git/blob/master/po/AGENTS.md#L843) `rm -f "$TODO"`
+- 2026-02-25 `6f8e885f` [L714](https://github.com/git/git/blob/master/po/AGENTS.md#L714) `TODO="po/review-todo.json"`
+- 2026-02-25 `6f8e885f` [L720](https://github.com/git/git/blob/master/po/AGENTS.md#L720) `rm -f "$TODO"`
+- 2026-09-18 `54c2884e` [L732](https://github.com/git/git/blob/master/po/AGENTS.md#L732) `rm -f "$BATCH_FILE" "$TODO" "$DONE"`
+- 2026-02-25 `6f8e885f` [L740](https://github.com/git/git/blob/master/po/AGENTS.md#L740) `rm -f "$TODO"`
+- 2026-02-25 `6f8e885f` [L765](https://github.com/git/git/blob/master/po/AGENTS.md#L765) `git-po-helper msg-select --json --head "$NUM" -o "$TODO" "$PENDING"`
+- 2026-02-25 `6f8e885f` [L796](https://github.com/git/git/blob/master/po/AGENTS.md#L796) `TODO="po/review-todo.json"`
+- 2026-02-25 `6f8e885f` [L805](https://github.com/git/git/blob/master/po/AGENTS.md#L805) `rm -f "$TODO"`
 
 `po/bg.po` (3)
 
@@ -2709,7 +2709,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `po/sv.po` (1)
 
-- 2026-06-25 `4de2e01d` [L16614](https://github.com/git/git/blob/master/po/sv.po#L16614) `# TODO: Hitta bättre översättning för "poll"`
+- 2026-06-25 `4de2e01d` [L17006](https://github.com/git/git/blob/master/po/sv.po#L17006) `# TODO: Hitta bättre översättning för "poll"`
 
 `po/vi.po` (1)
 
