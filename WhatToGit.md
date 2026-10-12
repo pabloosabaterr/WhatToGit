@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-415 lines in total, at HEAD `8103b446` (v2.55.0-1051-g8103b44651). Collected on 2026-10-05.
+415 lines in total, at HEAD `6de20f60` (v2.55.0-1095-g6de20f6092). Collected on 2026-10-12.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -367,7 +367,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-04-01 `d425f651` [L4085](https://github.com/git/git/blob/master/dir.c#L4085) `/* TODO: audit for interaction with sparse-index. */`
+- 2021-04-01 `d425f651` [L4098](https://github.com/git/git/blob/master/dir.c#L4098) `/* TODO: audit for interaction with sparse-index. */`
 
 `entry.c` (1)
 
@@ -1005,7 +1005,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `object-file.c` (1)
 
-- 2026-07-10 `48d730a1` [L1503](https://github.com/git/git/blob/master/object-file.c#L1503)
+- 2026-07-10 `48d730a1` [L1507](https://github.com/git/git/blob/master/object-file.c#L1507)
 
   ```
   /*
@@ -1364,7 +1364,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `sequencer.c` (4)
 
-- 2020-11-02 `14c4586c` [L786](https://github.com/git/git/blob/master/sequencer.c#L786)
+- 2020-11-02 `14c4586c` [L792](https://github.com/git/git/blob/master/sequencer.c#L792)
 
   ```
   /*
@@ -1377,8 +1377,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-09-27 `1b5f3733` [L4134](https://github.com/git/git/blob/master/sequencer.c#L4134) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
-- 2020-11-02 `14c4586c` [L4427](https://github.com/git/git/blob/master/sequencer.c#L4427)
+- 2021-09-27 `1b5f3733` [L4164](https://github.com/git/git/blob/master/sequencer.c#L4164) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+- 2020-11-02 `14c4586c` [L4458](https://github.com/git/git/blob/master/sequencer.c#L4458)
 
   ```
   /*
@@ -1389,7 +1389,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-07-15 `42554b78` [L5081](https://github.com/git/git/blob/master/sequencer.c#L5081)
+- 2026-07-15 `42554b78` [L5112](https://github.com/git/git/blob/master/sequencer.c#L5112)
 
   ```
   /*
@@ -1602,8 +1602,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `Documentation/git-rebase.adoc` (2)
 
-- 2010-08-10 `cd035b1c` [L946](https://github.com/git/git/blob/master/Documentation/git-rebase.adoc#L946) `pick deadbee Implement feature XXX`
-- 2010-08-10 `cd035b1c` [L947](https://github.com/git/git/blob/master/Documentation/git-rebase.adoc#L947) `fixup f1a5c00 Fix to feature XXX`
+- 2010-08-10 `cd035b1c` [L953](https://github.com/git/git/blob/master/Documentation/git-rebase.adoc#L953) `pick deadbee Implement feature XXX`
+- 2010-08-10 `cd035b1c` [L954](https://github.com/git/git/blob/master/Documentation/git-rebase.adoc#L954) `fixup f1a5c00 Fix to feature XXX`
 
 `Documentation/gitprotocol-http.adoc` (6)
 
@@ -3181,7 +3181,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `t/t5551-http-fetch-smart.sh` (1)
 
-- 2019-03-22 `3a9e1ad7` [L239](https://github.com/git/git/blob/master/t/t5551-http-fetch-smart.sh#L239)
+- 2019-03-22 `3a9e1ad7` [L254](https://github.com/git/git/blob/master/t/t5551-http-fetch-smart.sh#L254)
 
   ```
   # NEEDSWORK: When using HTTP(S), protocol v0 supports a "half-auth"
