@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-415 lines in total, at HEAD `6de20f60` (v2.55.0-1095-g6de20f6092). Collected on 2026-10-12.
+415 lines in total, at HEAD `c5140888` (v2.55.0-1165-gc51408889c). Collected on 2026-10-19.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -92,7 +92,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `apply.c` (3)
 
-- 2016-04-22 `13b5af22` [L864](https://github.com/git/git/blob/master/apply.c#L864)
+- 2016-04-22 `13b5af22` [L865](https://github.com/git/git/blob/master/apply.c#L865)
 
   ```
   /*
@@ -104,8 +104,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2016-04-22 `13b5af22` [L3406](https://github.com/git/git/blob/master/apply.c#L3406) `/* XXX read_sha1_file NUL-terminates */`
-- 2016-04-22 `13b5af22` [L3609](https://github.com/git/git/blob/master/apply.c#L3609)
+- 2016-04-22 `13b5af22` [L3407](https://github.com/git/git/blob/master/apply.c#L3407) `/* XXX read_sha1_file NUL-terminates */`
+- 2016-04-22 `13b5af22` [L3610](https://github.com/git/git/blob/master/apply.c#L3610)
 
   ```
   /*
@@ -674,7 +674,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `git-filter-branch.sh` (2)
 
-- 2007-07-23 `dfd05e38` [L542](https://github.com/git/git/blob/master/git-filter-branch.sh#L542)
+- 2007-07-23 `dfd05e38` [L544](https://github.com/git/git/blob/master/git-filter-branch.sh#L544)
 
   ```
   # TODO: This should possibly go, with the semantics that all positive given
@@ -682,7 +682,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # Filter tags
   ```
 
-- 2007-06-03 `6f6826c5` [L550](https://github.com/git/git/blob/master/git-filter-branch.sh#L550) `# XXX: Rewrite tagged trees as well?`
+- 2007-06-03 `6f6826c5` [L552](https://github.com/git/git/blob/master/git-filter-branch.sh#L552) `# XXX: Rewrite tagged trees as well?`
 
 `git-p4.py` (4)
 
@@ -993,7 +993,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `meson.build` (1)
 
-- 2025-04-23 `04a13ed8` [L2292](https://github.com/git/git/blob/master/meson.build#L2292) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
+- 2025-04-23 `04a13ed8` [L2296](https://github.com/git/git/blob/master/meson.build#L2296) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
 
 `midx.c` (1)
 
@@ -1287,7 +1287,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2015-06-30 `e828de82` [L1354](https://github.com/git/git/blob/master/rerere.c#L1354)
+- 2015-06-30 `e828de82` [L1353](https://github.com/git/git/blob/master/rerere.c#L1353)
 
   ```
   /*
@@ -2175,7 +2175,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/stash.c` (1)
 
-- 2021-09-27 `1b5f3733` [L364](https://github.com/git/git/blob/master/builtin/stash.c#L364) `opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+- 2021-09-27 `1b5f3733` [L363](https://github.com/git/git/blob/master/builtin/stash.c#L363) `opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
 
 `builtin/submodule--helper.c` (7)
 
@@ -2763,7 +2763,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `refs/reftable-backend.c` (4)
 
-- 2025-04-08 `ca89c18d` [L1357](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1357)
+- 2025-04-08 `ca89c18d` [L1358](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1358)
 
   ```
   /*
@@ -2779,7 +2779,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-05-07 `644daf77` [L1562](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1562)
+- 2024-05-07 `644daf77` [L1563](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1563)
 
   ```
   /*
@@ -2789,7 +2789,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-11-26 `46b5f670` [L2209](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2209)
+- 2024-11-26 `46b5f670` [L2210](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2210)
 
   ```
   /*
@@ -2798,7 +2798,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-11-26 `46b5f670` [L2260](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2260)
+- 2024-11-26 `46b5f670` [L2261](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2261)
 
   ```
   /*
