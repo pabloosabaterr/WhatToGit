@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-415 lines in total, at HEAD `c5140888` (v2.55.0-1165-gc51408889c). Collected on 2026-10-19.
+415 lines in total, at HEAD `7e34d817` (v2.55.0-1215-g7e34d8174d). Collected on 2026-10-26.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -13,8 +13,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | Marker | Count |
 | --- | --- |
 | TODO | 208 |
-| NEEDSWORK | 127 |
-| FIXME | 40 |
+| NEEDSWORK | 128 |
+| FIXME | 39 |
 | XXX | 41 |
 
 ## Count by top-level directory
@@ -22,14 +22,14 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | Directory | Count |
 | --- | --- |
 | (root) | 160 |
-| builtin | 57 |
+| builtin | 56 |
 | compat | 8 |
 | contrib | 11 |
 | Documentation | 16 |
 | git-gui | 7 |
 | gitk-git | 4 |
 | gitweb | 3 |
-| odb | 1 |
+| odb | 2 |
 | perl | 9 |
 | po | 22 |
 | refs | 5 |
@@ -375,7 +375,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `environment.h` (2)
 
-- 2026-07-14 `1a6c84e9` [L93](https://github.com/git/git/blob/master/environment.h#L93)
+- 2026-07-14 `1a6c84e9` [L101](https://github.com/git/git/blob/master/environment.h#L101)
 
   ```
   /*
@@ -385,7 +385,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-09-12 `673af418` [L214](https://github.com/git/git/blob/master/environment.h#L214)
+- 2024-09-12 `673af418` [L222](https://github.com/git/git/blob/master/environment.h#L222)
 
   ```
   /*
@@ -942,8 +942,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `merge-ort.c` (6)
 
-- 2021-01-01 `4204cd59` [L1797](https://github.com/git/git/blob/master/merge-ort.c#L1797) `/* FIXME: can't handle linked worktrees in submodules yet */`
-- 2021-01-01 `62fdec17` [L2220](https://github.com/git/git/blob/master/merge-ort.c#L2220)
+- 2021-01-01 `4204cd59` [L1801](https://github.com/git/git/blob/master/merge-ort.c#L1801) `/* FIXME: can't handle linked worktrees in submodules yet */`
+- 2021-01-01 `62fdec17` [L2224](https://github.com/git/git/blob/master/merge-ort.c#L2224)
 
   ```
   /*
@@ -962,7 +962,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2020-12-15 `53e88a03` [L3058](https://github.com/git/git/blob/master/merge-ort.c#L3058)
+- 2020-12-15 `53e88a03` [L3062](https://github.com/git/git/blob/master/merge-ort.c#L3062)
 
   ```
   /*
@@ -979,9 +979,9 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2020-12-13 `6681ce5c` [L4632](https://github.com/git/git/blob/master/merge-ort.c#L4632) `unpack_opts.quiet = 0; /* FIXME: sequencer might want quiet? */`
-- 2021-09-27 `04988c8d` [L4635](https://github.com/git/git/blob/master/merge-ort.c#L4635) `unpack_opts.preserve_ignored = 0; /* FIXME: !opts->overwrite_ignore */`
-- 2022-08-04 `4057523a` [L4782](https://github.com/git/git/blob/master/merge-ort.c#L4782)
+- 2020-12-13 `6681ce5c` [L4636](https://github.com/git/git/blob/master/merge-ort.c#L4636) `unpack_opts.quiet = 0; /* FIXME: sequencer might want quiet? */`
+- 2021-09-27 `04988c8d` [L4639](https://github.com/git/git/blob/master/merge-ort.c#L4639) `unpack_opts.preserve_ignored = 0; /* FIXME: !opts->overwrite_ignore */`
+- 2022-08-04 `4057523a` [L4786](https://github.com/git/git/blob/master/merge-ort.c#L4786)
 
   ```
   /*
@@ -997,7 +997,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `midx.c` (1)
 
-- 2024-04-01 `748b88a0` [L1017](https://github.com/git/git/blob/master/midx.c#L1017) `display_progress(progress, 0); /* TODO: Measure QSORT() progress */`
+- 2024-04-01 `748b88a0` [L1008](https://github.com/git/git/blob/master/midx.c#L1008) `display_progress(progress, 0); /* TODO: Measure QSORT() progress */`
 
 `notes-merge.c` (1)
 
@@ -1005,7 +1005,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `object-file.c` (1)
 
-- 2026-07-10 `48d730a1` [L1507](https://github.com/git/git/blob/master/object-file.c#L1507)
+- 2026-07-10 `48d730a1` [L1503](https://github.com/git/git/blob/master/object-file.c#L1503)
 
   ```
   /*
@@ -1026,32 +1026,9 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 - 2018-05-15 `14ba97f8` [L14](https://github.com/git/git/blob/master/object.h#L14) `/* TODO: migrate alloc_states to mem-pool? */`
 
-`odb.c` (1)
-
-- 2026-08-17 `98792770` [L31](https://github.com/git/git/blob/master/odb.c#L31)
-
-  ```
-  /*
-   * NEEDSWORK: we're using "core.ignoreCase" to deduplicate alternates that
-   * _may_ be the same. This requires quite a bit of boilerplate for dubious
-   * benefit:
-   *
-   *   - Duplicating alternates should really only lead to regressed performance.
-   *
-   *   - We don't properly resolve symlinks or mointpoints, so we may still end
-   *     up duplicating alternates.
-   *
-   *   - The value may be lying, in which case we might deduplicate alternates
-   *     that are in fact not mapping to the same directory.
-   *
-   * We should investigate whether we can remove this whole mechanism outright.
-   */
-  ```
-
-
 `odb.h` (1)
 
-- 2025-07-01 `e989dd96` [L508](https://github.com/git/git/blob/master/odb.h#L508)
+- 2025-07-01 `e989dd96` [L465](https://github.com/git/git/blob/master/odb.h#L465)
 
   ```
   /*
@@ -1079,7 +1056,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `pack-bitmap.c` (1)
 
-- 2022-08-14 `28cd7306` [L1045](https://github.com/git/git/blob/master/pack-bitmap.c#L1045) `/* NEEDSWORK: cache misses aren't recorded */`
+- 2022-08-14 `28cd7306` [L1043](https://github.com/git/git/blob/master/pack-bitmap.c#L1043) `/* NEEDSWORK: cache misses aren't recorded */`
 
 `path.c` (1)
 
@@ -1200,6 +1177,21 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 
+`remote.c` (1)
+
+- 2026-10-05 `86129fdd` [L586](https://github.com/git/git/blob/master/remote.c#L586)
+
+  ```
+  /*
+   * NEEDSWORK: this is validated/warned about here, during config
+   * parsing, regardless of whether the fetch that triggered this
+   * parse will ever consult it for this particular remote. See
+   * fetch.c's deferred handling of fetch.followRemoteHEAD for the
+   * pattern this should likely follow.
+   */
+  ```
+
+
 `remote.h` (2)
 
 - 2022-05-16 `1d04e719` [L465](https://github.com/git/git/blob/master/remote.h#L465) `* NEEDSWORK: This works incorrectly on the domain and protocol part.`
@@ -1235,10 +1227,6 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-
-`replay.c` (1)
-
-- 2026-01-13 `6aeda3cf` [L94](https://github.com/git/git/blob/master/replay.c#L94) `char *sign_commit = NULL; /* FIXME: cli users might want to sign again`
 
 `rerere.c` (4)
 
@@ -1400,9 +1388,27 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 
-`setup.c` (1)
+`setup.c` (2)
 
-- 2017-06-20 `73f192c9` [L2040](https://github.com/git/git/blob/master/setup.c#L2040)
+- 2026-10-02 `96715284` [L1367](https://github.com/git/git/blob/master/setup.c#L1367)
+
+  ```
+  /*
+   * A .gitconfig in $HOME may be shared across different
+   * machines and the config variable entries may or may not
+   * exist as paths on all of these machines.  In other words,
+   * it is not a warning worthy event when there is no such path
+   * on this machine---the entry may be useful elsewhere.
+   *
+   * NEEDSWORK: this also silently ignores misspelled paths. We
+   * may want to warn about a missing path unless it is marked
+   * as allowed to be missing, e.g., with an ":(optional)"
+   * prefix like pathname-typed configuration values, and hint
+   * about that prefix in the warning.
+   */
+  ```
+
+- 2017-06-20 `73f192c9` [L2084](https://github.com/git/git/blob/master/setup.c#L2084)
 
   ```
   /*
@@ -1521,7 +1527,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `upload-pack.c` (1)
 
-- 2007-01-08 `93822c22` [L193](https://github.com/git/git/blob/master/upload-pack.c#L193) `/* XXX: are we happy to lose stuff here? */`
+- 2007-01-08 `93822c22` [L195](https://github.com/git/git/blob/master/upload-pack.c#L195) `/* XXX: are we happy to lose stuff here? */`
 
 `usage.c` (1)
 
@@ -1622,7 +1628,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 </details>
 
 <details>
-<summary><b>builtin</b> &mdash; 57 markers</summary>
+<summary><b>builtin</b> &mdash; 56 markers</summary>
 
 `builtin/am.c` (1)
 
@@ -1630,7 +1636,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/checkout.c` (2)
 
-- 2008-08-30 `0cf8581e` [L366](https://github.com/git/git/blob/master/builtin/checkout.c#L366)
+- 2008-08-30 `0cf8581e` [L392](https://github.com/git/git/blob/master/builtin/checkout.c#L392)
 
   ```
   /*
@@ -1647,7 +1653,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2019-04-25 `183fb44f` [L705](https://github.com/git/git/blob/master/builtin/checkout.c#L705)
+- 2019-04-25 `183fb44f` [L740](https://github.com/git/git/blob/master/builtin/checkout.c#L740)
 
   ```
   /*
@@ -1709,7 +1715,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/fast-import.c` (5)
 
-- 2020-05-30 `d42a2fb7` [L1997](https://github.com/git/git/blob/master/builtin/fast-import.c#L1997)
+- 2020-05-30 `d42a2fb7` [L1993](https://github.com/git/git/blob/master/builtin/fast-import.c#L1993)
 
   ```
   /*
@@ -1719,7 +1725,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2020-05-30 `d42a2fb7` [L2010](https://github.com/git/git/blob/master/builtin/fast-import.c#L2010)
+- 2020-05-30 `d42a2fb7` [L2006](https://github.com/git/git/blob/master/builtin/fast-import.c#L2006)
 
   ```
   /*
@@ -1728,7 +1734,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-03-12 `ee66c793` [L2952](https://github.com/git/git/blob/master/builtin/fast-import.c#L2952)
+- 2026-03-12 `ee66c793` [L2948](https://github.com/git/git/blob/master/builtin/fast-import.c#L2948)
 
   ```
   /*
@@ -1743,7 +1749,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2019-10-03 `3164e6bd` [L3337](https://github.com/git/git/blob/master/builtin/fast-import.c#L3337)
+- 2019-10-03 `3164e6bd` [L3333](https://github.com/git/git/blob/master/builtin/fast-import.c#L3333)
 
   ```
   /*
@@ -1757,7 +1763,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-08-11 `86393769` [L4221](https://github.com/git/git/blob/master/builtin/fast-import.c#L4221)
+- 2026-08-11 `86393769` [L4217](https://github.com/git/git/blob/master/builtin/fast-import.c#L4217)
 
   ```
   /*
@@ -1779,23 +1785,9 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 
-`builtin/fetch.c` (4)
+`builtin/fetch.c` (3)
 
-- 2026-06-19 `7d00999b` [L1942](https://github.com/git/git/blob/master/builtin/fetch.c#L1942)
-
-  ```
-  /*
-   * NEEDSWORK: By the time this function executes, we have already parsed
-   * all such followRemoteHEAD values from the external configuration,
-   * potentially emitting warning messages for bogus values.  Ideally, if
-   * this fetch ends up not needing to consult these values, then git would
-   * not ever output a value warning. (eg: when pulling from a URL directly -
-   * rather than a configured remote, or when a remote's followRemoteHEAD
-   * overrides the fallback fetch setting)
-   */
-  ```
-
-- 2025-05-19 `0e358de6` [L2052](https://github.com/git/git/blob/master/builtin/fetch.c#L2052)
+- 2025-05-19 `0e358de6` [L2076](https://github.com/git/git/blob/master/builtin/fetch.c#L2076)
 
   ```
   /*
@@ -1809,8 +1801,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2017-12-08 `aa57b871` [L2845](https://github.com/git/git/blob/master/builtin/fetch.c#L2845) `/* TODO should this also die if we have a previous partial-clone? */`
-- 2022-01-18 `135a12bc` [L2886](https://github.com/git/git/blob/master/builtin/fetch.c#L2886)
+- 2017-12-08 `aa57b871` [L2886](https://github.com/git/git/blob/master/builtin/fetch.c#L2886) `/* TODO should this also die if we have a previous partial-clone? */`
+- 2022-01-18 `135a12bc` [L2927](https://github.com/git/git/blob/master/builtin/fetch.c#L2927)
 
   ```
   /*
@@ -1839,7 +1831,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 - 2023-02-24 `8840069a` [L768](https://github.com/git/git/blob/master/builtin/fsck.c#L768) `/* TODO: audit for interaction with sparse-index. */`
-- 2026-01-09 `f6b26258` [L949](https://github.com/git/git/blob/master/builtin/fsck.c#L949)
+- 2026-01-09 `f6b26258` [L948](https://github.com/git/git/blob/master/builtin/fsck.c#L948)
 
   ```
   /*
@@ -1872,7 +1864,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/gc.c` (1)
 
-- 2025-11-08 `28b83e6f` [L3102](https://github.com/git/git/blob/master/builtin/gc.c#L3102)
+- 2025-11-08 `28b83e6f` [L3103](https://github.com/git/git/blob/master/builtin/gc.c#L3103)
 
   ```
   /*
@@ -1894,7 +1886,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/history.c` (2)
 
-- 2026-04-27 `c6c22579` [L660](https://github.com/git/git/blob/master/builtin/history.c#L660)
+- 2026-04-27 `c6c22579` [L692](https://github.com/git/git/blob/master/builtin/history.c#L692)
 
   ```
   /*
@@ -1905,7 +1897,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-09-08 `25cfa7c6` [L1462](https://github.com/git/git/blob/master/builtin/history.c#L1462)
+- 2026-09-08 `25cfa7c6` [L1505](https://github.com/git/git/blob/master/builtin/history.c#L1505)
 
   ```
   /*
@@ -2179,7 +2171,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/submodule--helper.c` (7)
 
-- 2018-05-10 `fc1b9243` [L364](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L364)
+- 2018-05-10 `fc1b9243` [L365](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L365)
 
   ```
   /*
@@ -2190,7 +2182,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2017-03-17 `1f8d7115` [L596](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L596)
+- 2017-03-17 `1f8d7115` [L597](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L597)
 
   ```
   /*
@@ -2201,7 +2193,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2025-11-15 `dd8e8c78` [L2125](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2125)
+- 2025-11-15 `dd8e8c78` [L2126](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2126)
 
   ```
   /*
@@ -2210,7 +2202,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-03-26 `e8d06089` [L2957](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2957)
+- 2024-03-26 `e8d06089` [L2958](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2958)
 
   ```
   /*
@@ -2221,7 +2213,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-08-06 `a452128a` [L3565](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3565)
+- 2021-08-06 `a452128a` [L3566](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3566)
 
   ```
   /*
@@ -2230,7 +2222,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-08-06 `a452128a` [L3569](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3569)
+- 2021-08-06 `a452128a` [L3570](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3570)
 
   ```
   /*
@@ -2241,7 +2233,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-08-10 `a6226fd7` [L3611](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3611) `/* TODO: audit for interaction with sparse-index. */`
+- 2021-08-10 `a6226fd7` [L3612](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3612) `/* TODO: audit for interaction with sparse-index. */`
 
 </details>
 
@@ -2553,7 +2545,30 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 </details>
 
 <details>
-<summary><b>odb</b> &mdash; 1 markers</summary>
+<summary><b>odb</b> &mdash; 2 markers</summary>
+
+`odb/source-files.c` (1)
+
+- 2026-10-08 `cbfd4cb8` [L180](https://github.com/git/git/blob/master/odb/source-files.c#L180)
+
+  ```
+  /*
+   * NEEDSWORK: we're using "core.ignoreCase" to deduplicate alternates that
+   * _may_ be the same. This requires quite a bit of boilerplate for dubious
+   * benefit:
+   *
+   *   - Duplicating alternates should really only lead to regressed performance.
+   *
+   *   - We don't properly resolve symlinks or mointpoints, so we may still end
+   *     up duplicating alternates.
+   *
+   *   - The value may be lying, in which case we might deduplicate alternates
+   *     that are in fact not mapping to the same directory.
+   *
+   * We should investigate whether we can remove this whole mechanism outright.
+   */
+  ```
+
 
 `odb/source-loose.c` (1)
 
@@ -3376,11 +3391,11 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `t/test-lib.sh` (5)
 
-- 2022-07-28 `46fb057a` [L811](https://github.com/git/git/blob/master/t/test-lib.sh#L811) `say_color warn "# faked up failures as TODO & now exiting with 0 due t`
-- 2022-07-28 `46fb057a` [L820](https://github.com/git/git/blob/master/t/test-lib.sh#L820) `pfx="# TODO induced breakage (--invert-exit-code):"`
-- 2022-07-28 `6d00680d` [L843](https://github.com/git/git/blob/master/t/test-lib.sh#L843) `say_color error "ok $test_count - $1 # TODO known breakage vanished"`
-- 2022-07-28 `6d00680d` [L849](https://github.com/git/git/blob/master/t/test-lib.sh#L849) `say_color warn "not ok $test_count - $1 # TODO known breakage"`
-- 2026-02-20 `68ac70b6` [L1783](https://github.com/git/git/blob/master/t/test-lib.sh#L1783)
+- 2022-07-28 `46fb057a` [L812](https://github.com/git/git/blob/master/t/test-lib.sh#L812) `say_color warn "# faked up failures as TODO & now exiting with 0 due t`
+- 2022-07-28 `46fb057a` [L821](https://github.com/git/git/blob/master/t/test-lib.sh#L821) `pfx="# TODO induced breakage (--invert-exit-code):"`
+- 2022-07-28 `6d00680d` [L846](https://github.com/git/git/blob/master/t/test-lib.sh#L846) `say_color error "ok $test_count - $1 # TODO known breakage vanished"`
+- 2022-07-28 `6d00680d` [L852](https://github.com/git/git/blob/master/t/test-lib.sh#L852) `say_color warn "not ok $test_count - $1 # TODO known breakage"`
+- 2026-02-20 `68ac70b6` [L1787](https://github.com/git/git/blob/master/t/test-lib.sh#L1787)
 
   ```
   # We require Git to be built with iconv support, and we require the
