@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-415 lines in total, at HEAD `ebdc087d` (v2.55.0-1320-gebdc087dc9). Collected on 2026-11-02.
+415 lines in total, at HEAD `fb255012` (v2.55.0-1377-gfb255012ac). Collected on 2026-11-09.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -324,7 +324,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `diffcore-rename.c` (1)
 
-- 2021-06-22 `1aedd03a` [L849](https://github.com/git/git/blob/master/diffcore-rename.c#L849)
+- 2021-06-22 `1aedd03a` [L847](https://github.com/git/git/blob/master/diffcore-rename.c#L847)
 
   ```
   /*
@@ -1109,8 +1109,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 - 2018-10-10 `77ff1127` [L2271](https://github.com/git/git/blob/master/read-cache.c#L2271) `/* TODO: does creating more threads than cores help? */`
-- 2021-04-01 `0c18c059` [L2543](https://github.com/git/git/blob/master/read-cache.c#L2543) `/* TODO: audit for interaction with sparse-index. */`
-- 2023-05-16 `1a40e7be` [L3828](https://github.com/git/git/blob/master/read-cache.c#L3828) `/* TODO: audit for interaction with sparse-index. */`
+- 2021-04-01 `0c18c059` [L2544](https://github.com/git/git/blob/master/read-cache.c#L2544) `/* TODO: audit for interaction with sparse-index. */`
+- 2023-05-16 `1a40e7be` [L3879](https://github.com/git/git/blob/master/read-cache.c#L3879) `/* TODO: audit for interaction with sparse-index. */`
 
 `ref-filter.c` (2)
 
@@ -1365,8 +1365,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-09-27 `1b5f3733` [L4164](https://github.com/git/git/blob/master/sequencer.c#L4164) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
-- 2020-11-02 `14c4586c` [L4458](https://github.com/git/git/blob/master/sequencer.c#L4458)
+- 2021-09-27 `1b5f3733` [L4167](https://github.com/git/git/blob/master/sequencer.c#L4167) `unpack_tree_opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+- 2020-11-02 `14c4586c` [L4461](https://github.com/git/git/blob/master/sequencer.c#L4461)
 
   ```
   /*
@@ -1377,7 +1377,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-07-15 `42554b78` [L5112](https://github.com/git/git/blob/master/sequencer.c#L5112)
+- 2026-07-15 `42554b78` [L5115](https://github.com/git/git/blob/master/sequencer.c#L5115)
 
   ```
   /*
@@ -1508,7 +1508,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `unpack-trees.c` (1)
 
-- 2023-02-27 `13e1fd6e` [L2289](https://github.com/git/git/blob/master/unpack-trees.c#L2289)
+- 2023-02-27 `13e1fd6e` [L2290](https://github.com/git/git/blob/master/unpack-trees.c#L2290)
 
   ```
   /*
@@ -2167,7 +2167,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/stash.c` (1)
 
-- 2021-09-27 `1b5f3733` [L363](https://github.com/git/git/blob/master/builtin/stash.c#L363) `opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
+- 2021-09-27 `1b5f3733` [L362](https://github.com/git/git/blob/master/builtin/stash.c#L362) `opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
 
 `builtin/submodule--helper.c` (7)
 
@@ -2390,7 +2390,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # complex.  For now, just punt on all of this...
   ```
 
-- 2021-03-24 `61318078` [L3576](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash#L3576) `# NEEDSWORK: can we somehow unify this with the options in _git_log() `
+- 2021-03-24 `61318078` [L3577](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash#L3577) `# NEEDSWORK: can we somehow unify this with the options in _git_log() `
 
 `contrib/credential/netrc/git-credential-netrc.perl` (1)
 
