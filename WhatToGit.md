@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-415 lines in total, at HEAD `fb255012` (v2.55.0-1377-gfb255012ac). Collected on 2026-11-09.
+413 lines in total, at HEAD `7fb6055e` (v2.55.0-1628-g7fb6055e67). Collected on 2026-11-16.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -13,8 +13,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | Marker | Count |
 | --- | --- |
 | TODO | 208 |
-| NEEDSWORK | 128 |
-| FIXME | 39 |
+| NEEDSWORK | 127 |
+| FIXME | 38 |
 | XXX | 41 |
 
 ## Count by top-level directory
@@ -22,7 +22,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | Directory | Count |
 | --- | --- |
 | (root) | 160 |
-| builtin | 56 |
+| builtin | 54 |
 | compat | 8 |
 | contrib | 11 |
 | Documentation | 16 |
@@ -58,12 +58,12 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 | 2018 | 20 |
 | 2019 | 20 |
 | 2020 | 13 |
-| 2021 | 45 |
+| 2021 | 44 |
 | 2022 | 49 |
 | 2023 | 17 |
 | 2024 | 20 |
 | 2025 | 19 |
-| 2026 | 40 |
+| 2026 | 39 |
 
 ## Full listing
 
@@ -87,8 +87,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `Makefile` (2)
 
-- 2022-05-26 `b9832f7e` [L3215](https://github.com/git/git/blob/master/Makefile#L3215) `### TODO FIXME: Translating everything in these files is a bad`
-- 2025-04-23 `04a13ed8` [L3490](https://github.com/git/git/blob/master/Makefile#L3490) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
+- 2022-05-26 `b9832f7e` [L3217](https://github.com/git/git/blob/master/Makefile#L3217) `### TODO FIXME: Translating everything in these files is a bad`
+- 2025-04-23 `04a13ed8` [L3492](https://github.com/git/git/blob/master/Makefile#L3492) `# TODO: deprecate 'hdr-check' in lieu of 'check-headers' in Git 2.51+`
 
 `apply.c` (3)
 
@@ -104,8 +104,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2016-04-22 `13b5af22` [L3407](https://github.com/git/git/blob/master/apply.c#L3407) `/* XXX read_sha1_file NUL-terminates */`
-- 2016-04-22 `13b5af22` [L3610](https://github.com/git/git/blob/master/apply.c#L3610)
+- 2016-04-22 `13b5af22` [L3418](https://github.com/git/git/blob/master/apply.c#L3418) `/* XXX read_sha1_file NUL-terminates */`
+- 2016-04-22 `13b5af22` [L3621](https://github.com/git/git/blob/master/apply.c#L3621)
 
   ```
   /*
@@ -134,7 +134,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `bundle-uri.c` (1)
 
-- 2025-05-14 `35cb1bb0` [L327](https://github.com/git/git/blob/master/bundle-uri.c#L327)
+- 2025-05-14 `35cb1bb0` [L326](https://github.com/git/git/blob/master/bundle-uri.c#L326)
 
   ```
   /*
@@ -213,7 +213,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `connect.c` (1)
 
-- 2018-03-15 `1aa8dded` [L1454](https://github.com/git/git/blob/master/connect.c#L1454)
+- 2018-03-15 `1aa8dded` [L1468](https://github.com/git/git/blob/master/connect.c#L1468)
 
   ```
   /*
@@ -313,7 +313,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2019-04-05 `7fbbcb21` [L7449](https://github.com/git/git/blob/master/diff.c#L7449)
+- 2019-04-05 `7fbbcb21` [L7435](https://github.com/git/git/blob/master/diff.c#L7435)
 
   ```
   /*
@@ -375,7 +375,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `environment.h` (2)
 
-- 2026-07-14 `1a6c84e9` [L101](https://github.com/git/git/blob/master/environment.h#L101)
+- 2026-07-14 `1a6c84e9` [L102](https://github.com/git/git/blob/master/environment.h#L102)
 
   ```
   /*
@@ -385,7 +385,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-09-12 `673af418` [L222](https://github.com/git/git/blob/master/environment.h#L222)
+- 2024-09-12 `673af418` [L231](https://github.com/git/git/blob/master/environment.h#L231)
 
   ```
   /*
@@ -1028,7 +1028,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `odb.h` (1)
 
-- 2025-07-01 `e989dd96` [L453](https://github.com/git/git/blob/master/odb.h#L453)
+- 2025-07-01 `e989dd96` [L466](https://github.com/git/git/blob/master/odb.h#L466)
 
   ```
   /*
@@ -1095,7 +1095,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `read-cache.c` (4)
 
-- 2022-09-28 `4a6ed30f` [L1855](https://github.com/git/git/blob/master/read-cache.c#L1855)
+- 2022-09-28 `4a6ed30f` [L1868](https://github.com/git/git/blob/master/read-cache.c#L1868)
 
   ```
   /*
@@ -1108,9 +1108,9 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2018-10-10 `77ff1127` [L2271](https://github.com/git/git/blob/master/read-cache.c#L2271) `/* TODO: does creating more threads than cores help? */`
-- 2021-04-01 `0c18c059` [L2544](https://github.com/git/git/blob/master/read-cache.c#L2544) `/* TODO: audit for interaction with sparse-index. */`
-- 2023-05-16 `1a40e7be` [L3879](https://github.com/git/git/blob/master/read-cache.c#L3879) `/* TODO: audit for interaction with sparse-index. */`
+- 2018-10-10 `77ff1127` [L2284](https://github.com/git/git/blob/master/read-cache.c#L2284) `/* TODO: does creating more threads than cores help? */`
+- 2021-04-01 `0c18c059` [L2557](https://github.com/git/git/blob/master/read-cache.c#L2557) `/* TODO: audit for interaction with sparse-index. */`
+- 2023-05-16 `1a40e7be` [L3892](https://github.com/git/git/blob/master/read-cache.c#L3892) `/* TODO: audit for interaction with sparse-index. */`
 
 `ref-filter.c` (2)
 
@@ -1390,7 +1390,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `setup.c` (2)
 
-- 2026-10-02 `96715284` [L1367](https://github.com/git/git/blob/master/setup.c#L1367)
+- 2026-10-02 `96715284` [L1382](https://github.com/git/git/blob/master/setup.c#L1382)
 
   ```
   /*
@@ -1408,7 +1408,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2017-06-20 `73f192c9` [L2084](https://github.com/git/git/blob/master/setup.c#L2084)
+- 2017-06-20 `73f192c9` [L2102](https://github.com/git/git/blob/master/setup.c#L2102)
 
   ```
   /*
@@ -1628,7 +1628,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 </details>
 
 <details>
-<summary><b>builtin</b> &mdash; 56 markers</summary>
+<summary><b>builtin</b> &mdash; 54 markers</summary>
 
 `builtin/am.c` (1)
 
@@ -1667,7 +1667,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/clone.c` (1)
 
-- 2017-03-17 `bb62e0a9` [L1176](https://github.com/git/git/blob/master/builtin/clone.c#L1176)
+- 2017-03-17 `bb62e0a9` [L1209](https://github.com/git/git/blob/master/builtin/clone.c#L1209)
 
   ```
   /*
@@ -1713,7 +1713,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 
-`builtin/fast-import.c` (5)
+`builtin/fast-import.c` (4)
 
 - 2020-05-30 `d42a2fb7` [L1996](https://github.com/git/git/blob/master/builtin/fast-import.c#L1996)
 
@@ -1763,31 +1763,10 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-08-11 `86393769` [L4228](https://github.com/git/git/blob/master/builtin/fast-import.c#L4228)
-
-  ```
-  /*
-   * We don't parse most options until after we've seen the set of
-   * "feature" lines at the start of the stream (which allows the command
-   * line to override stream data). But we must do an early parse of any
-   * command-line options that impact how we interpret the feature lines.
-   *
-   * NEEDSWORK: This scan only matches the exact "--allow-unsafe-features"
-   * spelling and stops at the first argument that doesn't start with a
-   * dash. As parse_options() below also accepts unambiguous abbreviations
-   * and values separated by a space from their option, the two disagree
-   * for command lines like "--allow-unsafe" or "--depth 5
-   * --allow-unsafe-features": parse_options() accepts the option, but
-   * this scan doesn't see it, so unsafe features from the stream are
-   * still refused. This errs on the safe side, but should be fixed by
-   * teaching this scan about the options that take a value.
-   */
-  ```
-
 
 `builtin/fetch.c` (3)
 
-- 2025-05-19 `0e358de6` [L2077](https://github.com/git/git/blob/master/builtin/fetch.c#L2077)
+- 2025-05-19 `0e358de6` [L2093](https://github.com/git/git/blob/master/builtin/fetch.c#L2093)
 
   ```
   /*
@@ -1801,8 +1780,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2017-12-08 `aa57b871` [L2887](https://github.com/git/git/blob/master/builtin/fetch.c#L2887) `/* TODO should this also die if we have a previous partial-clone? */`
-- 2022-01-18 `135a12bc` [L2928](https://github.com/git/git/blob/master/builtin/fetch.c#L2928)
+- 2017-12-08 `aa57b871` [L2916](https://github.com/git/git/blob/master/builtin/fetch.c#L2916) `/* TODO should this also die if we have a previous partial-clone? */`
+- 2022-01-18 `135a12bc` [L2957](https://github.com/git/git/blob/master/builtin/fetch.c#L2957)
 
   ```
   /*
@@ -2099,7 +2078,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/rev-list.c` (1)
 
-- 2025-07-21 `f31abb42` [L789](https://github.com/git/git/blob/master/builtin/rev-list.c#L789)
+- 2025-07-21 `f31abb42` [L790](https://github.com/git/git/blob/master/builtin/rev-list.c#L790)
 
   ```
   /*
@@ -2165,10 +2144,6 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   ```
 
 
-`builtin/stash.c` (1)
-
-- 2021-09-27 `1b5f3733` [L362](https://github.com/git/git/blob/master/builtin/stash.c#L362) `opts.preserve_ignored = 0; /* FIXME: !overwrite_ignore */`
-
 `builtin/submodule--helper.c` (7)
 
 - 2018-05-10 `fc1b9243` [L365](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L365)
@@ -2193,7 +2168,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2025-11-15 `dd8e8c78` [L2126](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2126)
+- 2025-11-15 `dd8e8c78` [L2141](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2141)
 
   ```
   /*
@@ -2202,7 +2177,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-03-26 `e8d06089` [L2958](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2958)
+- 2024-03-26 `e8d06089` [L2980](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L2980)
 
   ```
   /*
@@ -2213,7 +2188,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-08-06 `a452128a` [L3566](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3566)
+- 2021-08-06 `a452128a` [L3598](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3598)
 
   ```
   /*
@@ -2222,7 +2197,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-08-06 `a452128a` [L3570](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3570)
+- 2021-08-06 `a452128a` [L3602](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3602)
 
   ```
   /*
@@ -2233,7 +2208,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-08-10 `a6226fd7` [L3612](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3612) `/* TODO: audit for interaction with sparse-index. */`
+- 2021-08-10 `a6226fd7` [L3644](https://github.com/git/git/blob/master/builtin/submodule--helper.c#L3644) `/* TODO: audit for interaction with sparse-index. */`
 
 </details>
 
@@ -2549,26 +2524,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `odb/source-files.c` (1)
 
-- 2026-10-08 `cbfd4cb8` [L180](https://github.com/git/git/blob/master/odb/source-files.c#L180)
-
-  ```
-  /*
-   * NEEDSWORK: we're using "core.ignoreCase" to deduplicate alternates that
-   * _may_ be the same. This requires quite a bit of boilerplate for dubious
-   * benefit:
-   *
-   *   - Duplicating alternates should really only lead to regressed performance.
-   *
-   *   - We don't properly resolve symlinks or mointpoints, so we may still end
-   *     up duplicating alternates.
-   *
-   *   - The value may be lying, in which case we might deduplicate alternates
-   *     that are in fact not mapping to the same directory.
-   *
-   * We should investigate whether we can remove this whole mechanism outright.
-   */
-  ```
-
+- 2026-10-28 `81fd5298` [L193](https://github.com/git/git/blob/master/odb/source-files.c#L193) `* NEEDSWORK: we're using "core.ignoreCase" to deduplicate`
 
 `odb/source-loose.c` (1)
 
@@ -3391,11 +3347,11 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `t/test-lib.sh` (5)
 
-- 2022-07-28 `46fb057a` [L812](https://github.com/git/git/blob/master/t/test-lib.sh#L812) `say_color warn "# faked up failures as TODO & now exiting with 0 due t`
-- 2022-07-28 `46fb057a` [L821](https://github.com/git/git/blob/master/t/test-lib.sh#L821) `pfx="# TODO induced breakage (--invert-exit-code):"`
-- 2022-07-28 `6d00680d` [L846](https://github.com/git/git/blob/master/t/test-lib.sh#L846) `say_color error "ok $test_count - $1 # TODO known breakage vanished"`
-- 2022-07-28 `6d00680d` [L852](https://github.com/git/git/blob/master/t/test-lib.sh#L852) `say_color warn "not ok $test_count - $1 # TODO known breakage"`
-- 2026-02-20 `68ac70b6` [L1787](https://github.com/git/git/blob/master/t/test-lib.sh#L1787)
+- 2022-07-28 `46fb057a` [L814](https://github.com/git/git/blob/master/t/test-lib.sh#L814) `say_color warn "# faked up failures as TODO & now exiting with 0 due t`
+- 2022-07-28 `46fb057a` [L823](https://github.com/git/git/blob/master/t/test-lib.sh#L823) `pfx="# TODO induced breakage (--invert-exit-code):"`
+- 2022-07-28 `6d00680d` [L848](https://github.com/git/git/blob/master/t/test-lib.sh#L848) `say_color error "ok $test_count - $1 # TODO known breakage vanished"`
+- 2022-07-28 `6d00680d` [L854](https://github.com/git/git/blob/master/t/test-lib.sh#L854) `say_color warn "not ok $test_count - $1 # TODO known breakage"`
+- 2026-02-20 `68ac70b6` [L1789](https://github.com/git/git/blob/master/t/test-lib.sh#L1789)
 
   ```
   # We require Git to be built with iconv support, and we require the
