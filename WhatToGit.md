@@ -1,6 +1,6 @@
 # TODO / NEEDSWORK / FIXME / XXX markers in git-src
 
-413 lines in total, at HEAD `7fb6055e` (v2.55.0-1628-g7fb6055e67). Collected on 2026-11-16.
+413 lines in total, at HEAD `f7de8145` (v2.55.0-1731-gf7de814569). Collected on 2026-11-23.
 
 Dates come from `git blame -w` and refer to the last time the line was touched, which is not necessarily when the marker was added.
 
@@ -367,7 +367,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-04-01 `d425f651` [L4098](https://github.com/git/git/blob/master/dir.c#L4098) `/* TODO: audit for interaction with sparse-index. */`
+- 2021-04-01 `d425f651` [L4157](https://github.com/git/git/blob/master/dir.c#L4157) `/* TODO: audit for interaction with sparse-index. */`
 
 `entry.c` (1)
 
@@ -1110,7 +1110,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 - 2018-10-10 `77ff1127` [L2284](https://github.com/git/git/blob/master/read-cache.c#L2284) `/* TODO: does creating more threads than cores help? */`
 - 2021-04-01 `0c18c059` [L2557](https://github.com/git/git/blob/master/read-cache.c#L2557) `/* TODO: audit for interaction with sparse-index. */`
-- 2023-05-16 `1a40e7be` [L3892](https://github.com/git/git/blob/master/read-cache.c#L3892) `/* TODO: audit for interaction with sparse-index. */`
+- 2023-05-16 `1a40e7be` [L3908](https://github.com/git/git/blob/master/read-cache.c#L3908) `/* TODO: audit for interaction with sparse-index. */`
 
 `ref-filter.c` (2)
 
@@ -1153,7 +1153,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2026-02-25 `01dc8459` [L2368](https://github.com/git/git/blob/master/refs.c#L2368)
+- 2026-02-25 `01dc8459` [L2374](https://github.com/git/git/blob/master/refs.c#L2374)
 
   ```
   /*
@@ -1179,7 +1179,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `remote.c` (1)
 
-- 2026-10-05 `86129fdd` [L586](https://github.com/git/git/blob/master/remote.c#L586)
+- 2026-10-05 `86129fdd` [L587](https://github.com/git/git/blob/master/remote.c#L587)
 
   ```
   /*
@@ -1462,10 +1462,10 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2016-08-31 `fd47ae6a` [L684](https://github.com/git/git/blob/master/submodule.c#L684) `/* TODO: other options may need to be passed here. */`
-- 2022-03-07 `b90d9f76` [L795](https://github.com/git/git/blob/master/submodule.c#L795) `* NEEDSWORK: Storing an arbitrary commit is undesirable because we can`
-- 2022-03-07 `b90d9f76` [L1650](https://github.com/git/git/blob/master/submodule.c#L1650) `* NEEDSWORK: Submodules set/unset a value for`
-- 2019-03-13 `bd5e567d` [L1784](https://github.com/git/git/blob/master/submodule.c#L1784)
+- 2016-08-31 `fd47ae6a` [L685](https://github.com/git/git/blob/master/submodule.c#L685) `/* TODO: other options may need to be passed here. */`
+- 2022-03-07 `b90d9f76` [L796](https://github.com/git/git/blob/master/submodule.c#L796) `* NEEDSWORK: Storing an arbitrary commit is undesirable because we can`
+- 2022-03-07 `b90d9f76` [L1651](https://github.com/git/git/blob/master/submodule.c#L1651) `* NEEDSWORK: Submodules set/unset a value for`
+- 2019-03-13 `bd5e567d` [L1785](https://github.com/git/git/blob/master/submodule.c#L1785)
 
   ```
   /*
@@ -1477,8 +1477,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2021-09-27 `94b7f156` [L2110](https://github.com/git/git/blob/master/submodule.c#L2110) `/* TODO: determine if this might overwright untracked files */`
-- 2017-03-08 `bf0231c6` [L2626](https://github.com/git/git/blob/master/submodule.c#L2626)
+- 2021-09-27 `94b7f156` [L2111](https://github.com/git/git/blob/master/submodule.c#L2111) `/* TODO: determine if this might overwright untracked files */`
+- 2017-03-08 `bf0231c6` [L2627](https://github.com/git/git/blob/master/submodule.c#L2627)
 
   ```
   /*
@@ -1508,7 +1508,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `unpack-trees.c` (1)
 
-- 2023-02-27 `13e1fd6e` [L2290](https://github.com/git/git/blob/master/unpack-trees.c#L2290)
+- 2023-02-27 `13e1fd6e` [L2343](https://github.com/git/git/blob/master/unpack-trees.c#L2343)
 
   ```
   /*
@@ -1797,9 +1797,9 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/fsck.c` (5)
 
-- 2026-01-09 `f6b26258` [L516](https://github.com/git/git/blob/master/builtin/fsck.c#L516) `/* TODO: Maybe supplement with latest reflog entry info too? */`
-- 2026-01-09 `f6b26258` [L523](https://github.com/git/git/blob/master/builtin/fsck.c#L523) `/* TODO: Consider also snapshotting the index of each worktree. */`
-- 2026-01-09 `f6b26258` [L640](https://github.com/git/git/blob/master/builtin/fsck.c#L640)
+- 2026-01-09 `f6b26258` [L515](https://github.com/git/git/blob/master/builtin/fsck.c#L515) `/* TODO: Maybe supplement with latest reflog entry info too? */`
+- 2026-01-09 `f6b26258` [L522](https://github.com/git/git/blob/master/builtin/fsck.c#L522) `/* TODO: Consider also snapshotting the index of each worktree. */`
+- 2026-01-09 `f6b26258` [L639](https://github.com/git/git/blob/master/builtin/fsck.c#L639)
 
   ```
   /*
@@ -1809,8 +1809,8 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2023-02-24 `8840069a` [L771](https://github.com/git/git/blob/master/builtin/fsck.c#L771) `/* TODO: audit for interaction with sparse-index. */`
-- 2026-01-09 `f6b26258` [L951](https://github.com/git/git/blob/master/builtin/fsck.c#L951)
+- 2023-02-24 `8840069a` [L770](https://github.com/git/git/blob/master/builtin/fsck.c#L770) `/* TODO: audit for interaction with sparse-index. */`
+- 2026-01-09 `f6b26258` [L949](https://github.com/git/git/blob/master/builtin/fsck.c#L949)
 
   ```
   /*
@@ -1843,7 +1843,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `builtin/gc.c` (1)
 
-- 2025-11-08 `28b83e6f` [L3105](https://github.com/git/git/blob/master/builtin/gc.c#L3105)
+- 2025-11-08 `28b83e6f` [L3110](https://github.com/git/git/blob/master/builtin/gc.c#L3110)
 
   ```
   /*
@@ -2345,7 +2345,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # files.
   ```
 
-- 2023-12-03 `a1fbe26a` [L3468](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash#L3468)
+- 2023-12-03 `a1fbe26a` [L3470](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash#L3470)
 
   ```
   # Since sparse-index is limited to cone-mode, in non-cone-mode the
@@ -2365,7 +2365,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
   # complex.  For now, just punt on all of this...
   ```
 
-- 2021-03-24 `61318078` [L3577](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash#L3577) `# NEEDSWORK: can we somehow unify this with the options in _git_log() `
+- 2021-03-24 `61318078` [L3579](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash#L3579) `# NEEDSWORK: can we somehow unify this with the options in _git_log() `
 
 `contrib/credential/netrc/git-credential-netrc.perl` (1)
 
@@ -2524,7 +2524,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `odb/source-files.c` (1)
 
-- 2026-10-28 `81fd5298` [L193](https://github.com/git/git/blob/master/odb/source-files.c#L193) `* NEEDSWORK: we're using "core.ignoreCase" to deduplicate`
+- 2026-10-28 `81fd5298` [L194](https://github.com/git/git/blob/master/odb/source-files.c#L194) `* NEEDSWORK: we're using "core.ignoreCase" to deduplicate`
 
 `odb/source-loose.c` (1)
 
@@ -2734,7 +2734,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `refs/reftable-backend.c` (4)
 
-- 2025-04-08 `ca89c18d` [L1358](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1358)
+- 2025-04-08 `ca89c18d` [L1359](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1359)
 
   ```
   /*
@@ -2750,7 +2750,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-05-07 `644daf77` [L1563](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1563)
+- 2024-05-07 `644daf77` [L1564](https://github.com/git/git/blob/master/refs/reftable-backend.c#L1564)
 
   ```
   /*
@@ -2760,7 +2760,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-11-26 `46b5f670` [L2210](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2210)
+- 2024-11-26 `46b5f670` [L2211](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2211)
 
   ```
   /*
@@ -2769,7 +2769,7 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
    */
   ```
 
-- 2024-11-26 `46b5f670` [L2261](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2261)
+- 2024-11-26 `46b5f670` [L2262](https://github.com/git/git/blob/master/refs/reftable-backend.c#L2262)
 
   ```
   /*
@@ -3347,11 +3347,11 @@ This file is generated. Run `deno task report` to rebuild it; do not edit it by 
 
 `t/test-lib.sh` (5)
 
-- 2022-07-28 `46fb057a` [L814](https://github.com/git/git/blob/master/t/test-lib.sh#L814) `say_color warn "# faked up failures as TODO & now exiting with 0 due t`
-- 2022-07-28 `46fb057a` [L823](https://github.com/git/git/blob/master/t/test-lib.sh#L823) `pfx="# TODO induced breakage (--invert-exit-code):"`
-- 2022-07-28 `6d00680d` [L848](https://github.com/git/git/blob/master/t/test-lib.sh#L848) `say_color error "ok $test_count - $1 # TODO known breakage vanished"`
-- 2022-07-28 `6d00680d` [L854](https://github.com/git/git/blob/master/t/test-lib.sh#L854) `say_color warn "not ok $test_count - $1 # TODO known breakage"`
-- 2026-02-20 `68ac70b6` [L1789](https://github.com/git/git/blob/master/t/test-lib.sh#L1789)
+- 2022-07-28 `46fb057a` [L817](https://github.com/git/git/blob/master/t/test-lib.sh#L817) `say_color warn "# faked up failures as TODO & now exiting with 0 due t`
+- 2022-07-28 `46fb057a` [L826](https://github.com/git/git/blob/master/t/test-lib.sh#L826) `pfx="# TODO induced breakage (--invert-exit-code):"`
+- 2022-07-28 `6d00680d` [L851](https://github.com/git/git/blob/master/t/test-lib.sh#L851) `say_color error "ok $test_count - $1 # TODO known breakage vanished"`
+- 2022-07-28 `6d00680d` [L857](https://github.com/git/git/blob/master/t/test-lib.sh#L857) `say_color warn "not ok $test_count - $1 # TODO known breakage"`
+- 2026-02-20 `68ac70b6` [L1792](https://github.com/git/git/blob/master/t/test-lib.sh#L1792)
 
   ```
   # We require Git to be built with iconv support, and we require the
